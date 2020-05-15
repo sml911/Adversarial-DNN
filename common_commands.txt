@@ -1,0 +1,62 @@
+Common Commands reference
+
+
+python cifar10_resnet.py
+--------------------------------------------------------
+Train an resnet classifier on clean data. All options are set in the script as opposed to on the command line.
+
+
+python cifar10_AdvGan_v1.py
+--------------------------------------------------------
+Train an AdvGan on a cifar10 classifier model. Run with options to define a new advgan. Run without to use existing meta data to define the model parameters. Trains a statically distilled model to be used as a basic surrogate for all black box attacks. Option to train dynamically distilled models during AdvGAN training for threat models with query access.
+
+
+python cifar10_cleverhans_train.py
+-------------------------------------------------------
+perform adversarial training on a model using a specified untargeted attacker
+
+
+cifar10_cleverhans_eval.py
+--------------------------------------------------------
+Evaluates a group of attackers on a group of models. The attackers could directly attack the target model (white box). Or they can attack a surrogate model trained on a disjoint dataset (black box). Attack can be targeted or untargeted and it includes the option to sweep the epsilon clipping parameter. If the threat model allows query access before test time, then the surrogate model can undergo an additional training step encouraging the surrogate model output to be the same as the target model output (distillation). The input data for this distillation training could be the unperturbed data that is held out for the attacker (static distillation), or it could be a mixture of the unperturbed data and the same data perturbed by the attacker (dynamic distillation). In the case of dynamic distillation, the training is a two-sided optimization problem. When the surrogate model is updated by a training step, this changes the output of the attacker. Thus, both the attacker and the surrogate model are updated for every training batch resulting in a much stronger black box attack.
+
+python cifar10_cleverhans_eval.py --attacker_keys fgsm_a --distillation dynamic --model_keys model_2 --eval_model_keys model_3_a --targeted --threat_model black_box
+	
+Evaluate fgsm_a in a black box setting using model_2 as a surrogate model and model_3_a as the black_box model. model_2 will be trained with dynamic distillation.
+
+cifar10_cleverhans_eval.py:
+  --attacker_keys: list of attacker keys to evaluate as defined in meta file
+    (default: 'fgsm_b,pgd_a,advgan_c')
+    (a comma separated list)
+  --[no]create_reports: Flag whether to create reports
+    (default: 'true')
+  --dataset: flag for dataset to eval. Options are CIFAR10
+    (default: 'CIFAR10')
+  --distillation: if the model is black-box, the surrogate model may be
+    distilled statically or dynamically static uses the original training set.
+    dynamic uses both training set and adversarial examples from a specific
+    attacker. Options are None, 'static', or 'dynamic'
+  --eval_model_keys: if threat_model is 'black_box' evaluate adversarial
+    examples on each compatable model in this list.These are your black box
+    models
+    (default: 'model_3')
+    (a comma separated list)
+  --model_keys: list of model keys to evaluate as defined in meta fileIf
+    threat_model is "black_box" this is a list of surrogate models
+    (default: 'model_2')
+    (a comma separated list)
+  --[no]reeval: Flag for reevaluating all attackersregardless of whether they
+    have been previously computed
+    (default: 'false')
+  --[no]sweep_eps: Flag to sweep epsilon in evaluation
+    (default: 'false')
+  --[no]targeted: Flag for targeted attack
+    (default: 'false')
+  --threat_model: attack-defense threat model. Choices are "white_box" or
+    "black_box"
+    (default: 'white_box')
+
+
+python create_reports_test.py
+--------------------------------------------------------
+Test file to create reports

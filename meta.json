@@ -1,0 +1,1895 @@
+{
+    "meta": {
+        "path": "C:\\Users\\sml94\\BitBucket\\adv-dnn-research\\TensorFlow\\Chron\\WeekA1_020319",
+        "dataset": "CIFAR10"
+    },
+    "attacker": {
+        "default": {
+            "attack_type": "default",
+            "active": false,
+            "threat_model": "white_box",
+            "attack_params": {
+                "clip_min": 0.0,
+                "clip_max": 1.0,
+                "batch_size": 64
+            }
+        },
+        "clean": {
+            "attack_type": "clean",
+            "active": false,
+            "attack_params": {},
+            "threat_model": "white_box"
+        },
+        "fgsm_a": {
+            "attack_type": "fgsm",
+            "active": false,
+            "attack_params": {
+                "eps": 0.3,
+                "ord": Infinity,
+                "batch_size": 64
+            },
+            "threat_model": "white_box"
+        },
+        "fgsm_b": {
+            "attack_type": "fgsm",
+            "active": true,
+            "attack_params": {
+                "eps": 0.03137,
+                "ord": Infinity,
+                "batch_size": 64
+            },
+            "threat_model": "white_box"
+        },
+        "fgsm_c": {
+            "attack_type": "fgsm",
+            "active": true,
+            "attack_params": {
+                "eps": 0.03137,
+                "ord": Infinity,
+                "batch_size": 64
+            },
+            "threat_model": "black_box"
+        },
+        "cwl2_a": {
+            "attack_type": "cwl2",
+            "active": false,
+            "attack_params": {
+                "binary_search_steps": 1,
+                "max_iterations": 100,
+                "learning_rate": 0.1,
+                "initial_const": 10,
+                "batch_size": 10
+            },
+            "threat_model": "white_box"
+        },
+        "cwl2_b": {
+            "attack_type": "cwl2",
+            "active": false,
+            "attack_params": {
+                "binary_search_steps": 1,
+                "max_iterations": 100,
+                "learning_rate": 0.1,
+                "initial_const": 10,
+                "batch_size": 4,
+                "confidence": 0
+            },
+            "threat_model": "black_box"
+        },
+        "cwl2_c": {
+            "attack_type": "cwl2",
+            "active": false,
+            "attack_params": {
+                "binary_search_steps": 1,
+                "max_iterations": 100,
+                "learning_rate": 0.1,
+                "initial_const": 10,
+                "batch_size": 4,
+                "confidence": 0.1
+            },
+            "threat_model": "black_box"
+        },
+        "cwl2_d": {
+            "attack_type": "cwl2",
+            "active": false,
+            "attack_params": {
+                "binary_search_steps": 1,
+                "max_iterations": 100,
+                "learning_rate": 0.1,
+                "initial_const": 10,
+                "batch_size": 4,
+                "confidence": 0.2
+            },
+            "threat_model": "black_box"
+        },
+        "cwl2_e": {
+            "attack_type": "cwl2",
+            "active": false,
+            "attack_params": {
+                "binary_search_steps": 1,
+                "max_iterations": 100,
+                "learning_rate": 0.1,
+                "initial_const": 10,
+                "batch_size": 4,
+                "confidence": 0.3
+            },
+            "threat_model": "black_box"
+        },
+        "cwl2_f": {
+            "attack_type": "cwl2",
+            "active": false,
+            "attack_params": {
+                "binary_search_steps": 1,
+                "max_iterations": 100,
+                "learning_rate": 0.1,
+                "initial_const": 10,
+                "batch_size": 4,
+                "confidence": 0.4
+            },
+            "threat_model": "black_box"
+        },
+        "cwl2_g": {
+            "attack_type": "cwl2",
+            "active": false,
+            "attack_params": {
+                "binary_search_steps": 1,
+                "max_iterations": 100,
+                "learning_rate": 0.1,
+                "initial_const": 10,
+                "batch_size": 4,
+                "confidence": 0.5
+            },
+            "threat_model": "black_box"
+        },
+        "cwl2_h": {
+            "attack_type": "cwl2",
+            "active": false,
+            "attack_params": {
+                "binary_search_steps": 1,
+                "max_iterations": 100,
+                "learning_rate": 0.1,
+                "initial_const": 10,
+                "batch_size": 4,
+                "confidence": 0.6
+            },
+            "threat_model": "black_box"
+        },
+        "cwl2_i": {
+            "attack_type": "cwl2",
+            "active": false,
+            "attack_params": {
+                "binary_search_steps": 1,
+                "max_iterations": 100,
+                "learning_rate": 0.1,
+                "initial_const": 10,
+                "batch_size": 4,
+                "confidence": 0.7
+            },
+            "threat_model": "black_box"
+        },
+        "cwl2_j": {
+            "attack_type": "cwl2",
+            "active": false,
+            "attack_params": {
+                "binary_search_steps": 1,
+                "max_iterations": 100,
+                "learning_rate": 0.1,
+                "initial_const": 10,
+                "batch_size": 4,
+                "confidence": 0.8
+            },
+            "threat_model": "black_box"
+        },
+        "cwl2_k": {
+            "attack_type": "cwl2",
+            "active": false,
+            "attack_params": {
+                "binary_search_steps": 1,
+                "max_iterations": 100,
+                "learning_rate": 0.1,
+                "initial_const": 10,
+                "batch_size": 4,
+                "confidence": 0.9
+            },
+            "threat_model": "black_box"
+        },
+        "cwl2_l": {
+            "attack_type": "cwl2",
+            "active": false,
+            "attack_params": {
+                "binary_search_steps": 1,
+                "max_iterations": 100,
+                "learning_rate": 0.1,
+                "initial_const": 10,
+                "batch_size": 4,
+                "confidence": 0.999
+            },
+            "threat_model": "black_box"
+        },
+        "pgd_a": {
+            "attack_type": "pgd",
+            "active": true,
+            "attack_params": {
+                "eps": 0.03137,
+                "ord": Infinity,
+                "eps_iter": 0.005,
+                "nb_iter": 20,
+                "batch_size": 64
+            },
+            "threat_model": "white_box"
+        },
+        "pgd_b": {
+            "attack_type": "pgd",
+            "active": true,
+            "attack_params": {
+                "eps": 0.03137,
+                "ord": Infinity,
+                "eps_iter": 0.005,
+                "nb_iter": 20,
+                "batch_size": 64
+            },
+            "threat_model": "black_box"
+        },
+        "pgd_c": {
+            "attack_type": "pgd",
+            "active": true,
+            "attack_params": {
+                "eps": 0.03137,
+                "ord": Infinity,
+                "eps_iter": 0.01,
+                "nb_iter": 3,
+                "batch_size": 64
+            },
+            "threat_model": "black_box"
+        },
+        "spsa_a": {
+            "attack_type": "spsa",
+            "active": true,
+            "attack_params": {
+                "eps": 0.03137,
+                "nb_iter": 20,
+                "spsa_samples": 128,
+                "spsa_iters": 1,
+                "delta": 0.01,
+                "learning_rate": 0.01
+            },
+            "threat_model": "white_box"
+        },
+        "g+pgd_a": {
+            "attack_type": "g+pgd",
+            "active": true,
+            "meta_key": "GAN_ResNet22v3D_0000",
+            "attack_params": {
+                "eps": 0.03137,
+                "ord": Infinity,
+                "eps_iter": 0.01,
+                "nb_iter": 3,
+                "batch_size": 64
+            },
+            "threat_model": "black_box"
+        },
+        "g+spsa_a": {
+            "attack_type": "g+spsa",
+            "active": true,
+            "meta_key": "GAN_ResNet22v3D_0000",
+            "attack_params": {
+                "eps": 0.03137,
+                "nb_iter": 20,
+                "spsa_samples": 128,
+                "spsa_iters": 1,
+                "delta": 0.01,
+                "learning_rate": 0.01
+            },
+            "threat_model": "white_box"
+        },
+        "advgan_b": {
+            "attack_type": "advgan",
+            "active": true,
+            "meta_key": "GAN_Dense3_0003",
+            "attack_params": {
+                "eps": 1,
+                "ord": Infinity
+            },
+            "threat_model": "white_box"
+        },
+        "advgan_c": {
+            "attack_type": "advgan",
+            "active": true,
+            "meta_key": "GAN_Dense3_0003",
+            "attack_params": {
+                "eps": 0.03137,
+                "ord": Infinity
+            },
+            "threat_model": "white_box"
+        },
+        "advgan_1_a": {
+            "attack_type": "advgan",
+            "active": true,
+            "meta_key": "GAN_ResNet12v1_0000",
+            "attack_params": {
+                "eps": 0.03137,
+                "ord": Infinity
+            },
+            "threat_model": "white_box"
+        },
+        "advgan_1_b": {
+            "attack_type": "advgan",
+            "active": true,
+            "meta_key": "GAN_ResNet12v1_0000",
+            "attack_params": {
+                "eps": 1,
+                "ord": Infinity
+            },
+            "threat_model": "white_box"
+        },
+        "advgan_2_a": {
+            "attack_type": "advgan",
+            "active": true,
+            "meta_key": "GAN_ResNet12v2_0000",
+            "attack_params": {
+                "eps": 0.03137,
+                "ord": Infinity
+            },
+            "threat_model": "white_box"
+        },
+        "advgan_2_b": {
+            "attack_type": "advgan",
+            "active": true,
+            "meta_key": "GAN_ResNet12v2_0000",
+            "attack_params": {
+                "eps": 1,
+                "ord": Infinity
+            },
+            "threat_model": "white_box"
+        },
+        "advgan_3_a": {
+            "attack_type": "advgan",
+            "active": true,
+            "meta_key": "GAN_ResNet12v1_0001",
+            "attack_params": {
+                "eps": 1,
+                "ord": Infinity
+            },
+            "threat_model": "white_box"
+        },
+        "advgan_4_a": {
+            "attack_type": "advgan",
+            "active": true,
+            "meta_key": "GAN_ResNet22v2_0000",
+            "attack_params": {
+                "eps": 1,
+                "ord": Infinity
+            },
+            "threat_model": "white_box"
+        },
+        "advgan_5_a": {
+            "attack_type": "advgan",
+            "active": true,
+            "meta_key": "GAN_ResNet22v2_0001",
+            "attack_params": {
+                "eps": 1,
+                "ord": Infinity
+            },
+            "threat_model": "white_box"
+        },
+        "advgan_6_a": {
+            "attack_type": "advgan",
+            "active": true,
+            "meta_key": "GAN_ResNet22v2_0002",
+            "attack_params": {
+                "eps": 1,
+                "ord": Infinity
+            },
+            "threat_model": "white_box"
+        },
+        "advgan_7_a": {
+            "attack_type": "advgan",
+            "active": true,
+            "meta_key": "GAN_ResNet18Xiao_0000",
+            "attack_params": {
+                "eps": 1,
+                "ord": Infinity
+            },
+            "threat_model": "white_box"
+        },
+        "advgan_8_a": {
+            "attack_type": "advgan",
+            "active": true,
+            "meta_key": "GAN_ResNet12v1_0002",
+            "attack_params": {
+                "eps": 1,
+                "ord": Infinity
+            },
+            "threat_model": "white_box"
+        },
+        "advgan_9_a": {
+            "attack_type": "advgan",
+            "active": true,
+            "meta_key": "GAN_ResNet12v1_0003",
+            "attack_params": {
+                "eps": 1,
+                "ord": Infinity
+            },
+            "threat_model": "white_box"
+        },
+        "advgan_10_a": {
+            "attack_type": "advgan",
+            "active": true,
+            "meta_key": "GAN_ResNet20Xiao_0000",
+            "attack_params": {
+                "eps": 1,
+                "ord": Infinity
+            },
+            "threat_model": "white_box"
+        },
+        "advgan_11_a": {
+            "attack_type": "advgan",
+            "active": true,
+            "meta_key": "GAN_ResNet22v2n_0000",
+            "attack_params": {
+                "eps": 1,
+                "ord": Infinity
+            },
+            "threat_model": "white_box"
+        },
+        "advgan_12_a": {
+            "attack_type": "advgan",
+            "active": true,
+            "meta_key": "GAN_ResNet22v2_0003",
+            "attack_params": {
+                "eps": 1,
+                "ord": Infinity
+            }
+        },
+        "advgan_13_a": {
+            "attack_type": "advgan",
+            "active": true,
+            "meta_key": "GAN_ResNet23v2C_0001",
+            "attack_params": {
+                "eps": 1,
+                "ord": Infinity
+            },
+            "threat_model": "black_box"
+        },
+        "advgan_14_a": {
+            "attack_type": "advgan",
+            "active": true,
+            "meta_key": "GAN_ResNet22v3D_0000",
+            "threat_model": "black_box",
+            "attack_params": {
+                "eps": 1,
+                "ord": Infinity
+            }
+        },
+        "advgan_14_b": {
+            "attack_type": "advgan",
+            "active": true,
+            "meta_key": "GAN_ResNet22v3D_0000",
+            "threat_model": "black_box",
+            "attack_params": {
+                "eps": 0.03137,
+                "ord": Infinity
+            }
+        },
+        "advgan_15_a": {
+            "attack_type": "advgan",
+            "active": true,
+            "meta_key": "GAN_ResNet22v3D_0001",
+            "threat_model": "white_box",
+            "attack_params": {
+                "eps": 1,
+                "ord": Infinity
+            }
+        },
+        "advgan_15_b": {
+            "attack_type": "advgan",
+            "active": true,
+            "meta_key": "GAN_ResNet22v3D_0101",
+            "threat_model": "white_box",
+            "attack_params": {
+                "eps": 1,
+                "ord": Infinity
+            }
+        },
+        "advgan_15_c": {
+            "attack_type": "advgan",
+            "active": true,
+            "meta_key": "GAN_ResNet22v3D_0201",
+            "threat_model": "white_box",
+            "attack_params": {
+                "eps": 1,
+                "ord": Infinity
+            }
+        },
+        "advgan_16_a": {
+            "attack_type": "advgan",
+            "active": true,
+            "meta_key": "GAN_ResNet22v3D_0002",
+            "threat_model": "white_box",
+            "attack_params": {
+                "eps": 1,
+                "ord": Infinity
+            }
+        },
+        "advgan_17_a": {
+            "attack_type": "advgan",
+            "active": true,
+            "meta_key": "GAN_ResNet22v3D_0005",
+            "threat_model": "black_box",
+            "attack_params": {
+                "eps": 1,
+                "ord": Infinity
+            }
+        },
+        "advgan_18_a": {
+            "attack_type": "advgan",
+            "active": true,
+            "meta_key": "GAN_ResNet22v3D_0006",
+            "threat_model": "white_box",
+            "attack_params": {
+                "eps": 1,
+                "ord": Infinity
+            }
+        },
+        "advgan_19_a": {
+            "attack_type": "advgan",
+            "active": true,
+            "meta_key": "GAN_ResNet22v3D_0007",
+            "threat_model": "white_box",
+            "attack_params": {
+                "eps": 1,
+                "ord": Infinity
+            }
+        },
+        "advgan_20_a": {
+            "attack_type": "advgan",
+            "active": true,
+            "meta_key": "GAN_ResNet22v3D_0009",
+            "threat_model": "black_box",
+            "attack_params": {
+                "eps": 1,
+                "ord": Infinity
+            }
+        },
+        "advgan_21_a": {
+            "attack_type": "advgan",
+            "active": true,
+            "meta_key": "GAN_ResNet22v3D_0008",
+            "threat_model": "black_box",
+            "attack_params": {
+                "eps": 1,
+                "ord": Infinity
+            }
+        },
+        "advgan_22_a": {
+            "attack_type": "advgan",
+            "active": true,
+            "meta_key": "GAN_ResNet22v3D_0013",
+            "threat_model": "black_box",
+            "attack_params": {
+                "eps": 1,
+                "ord": Infinity
+            }
+        },
+        "advgan_23_a": {
+            "attack_type": "advgan",
+            "active": true,
+            "meta_key": "GAN_ResNet22v3D_0014",
+            "threat_model": "white_box",
+            "attack_params": {
+                "eps": 1,
+                "ord": Infinity
+            }
+        },
+        "advgan_24_a": {
+            "attack_type": "advgan",
+            "active": true,
+            "meta_key": "GAN_ResNet22v3D_0101",
+            "threat_model": "white_box",
+            "attack_params": {
+                "eps": 1,
+                "ord": Infinity
+            }
+        },
+        "advgan_25_a": {
+            "attack_type": "advgan",
+            "active": true,
+            "meta_key": "GAN_Dense3_0301",
+            "threat_model": "white_box",
+            "attack_params": {
+                "eps": 1,
+                "ord": Infinity
+            }
+        },
+        "advgan_26_a": {
+            "attack_type": "advgan",
+            "active": true,
+            "meta_key": "GAN_ResNet22v3D_0201",
+            "threat_model": "white_box",
+            "attack_params": {
+                "eps": 1,
+                "ord": Infinity
+            }
+        }
+    },
+    "model": {
+        "model_1_a": {
+            "architecture": "ResNet20_v2",
+            "folder_path": "saved_models/cifar10_ResNet20_v2",
+            "parent_key": "None",
+            "file_name": "cifar10_ResNet20_v2_model_clean.h5",
+            "adv_training": false,
+            "attacker_key": "clean",
+            "threat_models": [
+                "white_box"
+            ]
+        },
+        "model_1_c": {
+            "architecture": "ResNet20_v2",
+            "folder_path": "saved_models/cifar10_ResNet20_v2",
+            "parent_key": "model_1_a",
+            "file_name": "cifar10_ResNet20_v2_model_fgsm_a_train.h5",
+            "adv_training": true,
+            "attacker_key": "fgsm_a",
+            "threat_models": [
+                "white_box"
+            ]
+        },
+        "model_1_d": {
+            "architecture": "ResNet20_v2",
+            "folder_path": "saved_models/cifar10_ResNet20_v2",
+            "parent_key": "model_1_a",
+            "file_name": "cifar10_ResNet20_v2_model_advgan_b_train.h5",
+            "adv_training": true,
+            "attacker_key": "advgan_b",
+            "attack_stats": {
+                "L1": "156.281",
+                "L2": "3.63591",
+                "Linf": "0.274296",
+                "%pix": "94.7767"
+            },
+            "report": {
+                "clean_train_adv_eval": "0.0",
+                "clean_train_clean_eval": "0.0",
+                "train_adv_train_adv_eval": "0.0",
+                "train_adv_train_clean_eval": "0.0",
+                "train_clean_train_adv_eval": "0.0",
+                "train_clean_train_clean_eval": "0.0"
+            },
+            "train_params": {
+                "batch_size": 128,
+                "learning_rate": 0.005,
+                "nb_epochs": 200
+            },
+            "reeval": false,
+            "training_finished": true,
+            "threat_models": [
+                "white_box"
+            ]
+        },
+        "model_1_e": {
+            "architecture": "ResNet20_v2",
+            "folder_path": "saved_models/cifar10_ResNet20_v2",
+            "parent_key": "model_1_a",
+            "file_name": "cifar10_ResNet20_v2_model_fgsm_b_train_epoch_20.h5",
+            "adv_training": true,
+            "attacker_key": "fgsm_b",
+            "attack_stats": {
+                "L1": "94.4044",
+                "L2": "1.71435",
+                "Linf": "0.03137",
+                "%pix": "99.2795"
+            },
+            "report": {
+                "clean_train_adv_eval": "0.0",
+                "clean_train_clean_eval": "0.0",
+                "train_adv_train_adv_eval": "0.0",
+                "train_adv_train_clean_eval": "0.0",
+                "train_clean_train_adv_eval": "0.0",
+                "train_clean_train_clean_eval": "0.0"
+            },
+            "train_params": {
+                "batch_size": 128,
+                "learning_rate": 0.005,
+                "nb_epochs": 180
+            },
+            "reeval": false,
+            "training_finished": false,
+            "threat_models": [
+                "white_box"
+            ]
+        },
+        "model_1_f": {
+            "architecture": "ResNet20_v2",
+            "folder_path": "saved_models/cifar10_ResNet20_v2",
+            "parent_key": "model_1_a",
+            "file_name": "cifar10_ResNet20_v2_model_pgd_a_train.h5",
+            "adv_training": true,
+            "attacker_key": "pgd_a",
+            "attack_stats": {
+                "L1": "63.4623",
+                "L2": "1.27836",
+                "Linf": "0.03137",
+                "%pix": "91.2616"
+            },
+            "report": {
+                "adv_train_adv_eval": "0.4528",
+                "adv_train_clean_eval": "0.7929",
+                "clean_train_adv_eval": "0.0",
+                "clean_train_clean_eval": "0.0",
+                "train_adv_train_adv_eval": "0.0",
+                "train_adv_train_clean_eval": "0.0",
+                "train_clean_train_adv_eval": "0.0",
+                "train_clean_train_clean_eval": "0.0"
+            },
+            "train_params": {
+                "batch_size": 128,
+                "learning_rate": 0.005,
+                "nb_epochs": 200
+            },
+            "reeval": false,
+            "training_finished": true,
+            "threat_models": [
+                "white_box"
+            ]
+        },
+        "model_1_g": {
+            "architecture": "ResNet20_v2",
+            "folder_path": "saved_models/cifar10_ResNet20_v2",
+            "parent_key": "model_1_a",
+            "file_name": "cifar10_ResNet20_v2_model_advgan_c_train.h5",
+            "adv_training": true,
+            "attacker_key": "advgan_c",
+            "attack_stats": {
+                "L1": "71.7208",
+                "L2": "1.41152",
+                "Linf": "0.03137",
+                "%pix": "93.368"
+            },
+            "report": {
+                "adv_train_adv_eval": "0.8656",
+                "adv_train_clean_eval": "0.9041",
+                "clean_train_adv_eval": "0.0",
+                "clean_train_clean_eval": "0.0",
+                "train_adv_train_adv_eval": "0.0",
+                "train_adv_train_clean_eval": "0.0",
+                "train_clean_train_adv_eval": "0.0",
+                "train_clean_train_clean_eval": "0.0"
+            },
+            "train_params": {
+                "batch_size": 128,
+                "learning_rate": 0.005,
+                "nb_epochs": 200
+            },
+            "reeval": false,
+            "training_finished": true,
+            "threat_models": [
+                "white_box"
+            ]
+        },
+        "model_2_0": {
+            "description": "surrogate model (descrption may need to be removed)",
+            "architecture": "ResNet32_v1",
+            "folder_path": "saved_models/cifar10_ResNet32_v1",
+            "parent_key": "None",
+            "file_name": "cifar10_ResNet32_v1_model_clean.h5",
+            "adv_training": false,
+            "attacker_key": "clean",
+            "threat_models": [
+                "white_box",
+                "black_box_A"
+            ],
+            "train_params": {
+                "batch_size": 128,
+                "learning_rate": 0.005,
+                "nb_epochs": 200
+            },
+            "reeval": false,
+            "training_finished": false
+        },
+        "model_3_0": {
+            "architecture": "ResNet56_v2",
+            "folder_path": "saved_models/cifar10_ResNet56_v2",
+            "parent_key": "None",
+            "file_name": "cifar10_ResNet56_v2_model_clean.h5",
+            "adv_training": false,
+            "attacker_key": "clean",
+            "threat_models": [
+                "white_box",
+                "black_box_B"
+            ],
+            "train_params": {
+                "batch_size": 128,
+                "learning_rate": 0.005,
+                "nb_epochs": 200
+            },
+            "reeval": false,
+            "training_finished": false
+        },
+        "model_3_a": {
+            "architecture": "ResNet56_v2",
+            "folder_path": "saved_models/cifar10_ResNet56_v2",
+            "parent_key": "model_3_0",
+            "file_name": "cifar10_ResNet56_v2_model_fgsm_a_train.h5",
+            "adv_training": true,
+            "attacker_key": "fgsm_a",
+            "threat_models": [
+                "black_box_B"
+            ],
+            "train_params": {
+                "batch_size": 128,
+                "learning_rate": 0.005,
+                "nb_epochs": 140
+            },
+            "reeval": false,
+            "training_finished": false,
+            "attack_stats": {
+                "L1": "817.734",
+                "L2": "15.29",
+                "Linf": "0.3",
+                "%pix": "98.896"
+            },
+            "report": {
+                "adv_train_adv_eval": "0.8886",
+                "adv_train_clean_eval": "0.9031",
+                "clean_train_adv_eval": "0.0",
+                "clean_train_clean_eval": "0.0",
+                "train_adv_train_adv_eval": "0.0",
+                "train_adv_train_clean_eval": "0.0",
+                "train_clean_train_adv_eval": "0.0",
+                "train_clean_train_clean_eval": "0.0"
+            }
+        },
+        "model_3_b": {
+            "architecture": "ResNet56_v2",
+            "folder_path": "saved_models/cifar10_ResNet56_v2",
+            "parent_key": "model_3_0",
+            "file_name": "cifar10_ResNet56_v2_model_pgd_b_train.h5",
+            "adv_training": true,
+            "attacker_key": "pgd_b",
+            "threat_models": [
+                "black_box_B"
+            ],
+            "train_params": {
+                "batch_size": 128,
+                "learning_rate": 0.005,
+                "nb_epochs": 200
+            },
+            "reeval": false,
+            "training_finished": true,
+            "attack_stats": {
+                "L1": "62.49",
+                "L2": "1.26321",
+                "Linf": "0.03137",
+                "%pix": "90.773"
+            },
+            "report": {
+                "adv_train_adv_eval": "0.441",
+                "adv_train_clean_eval": "0.7706",
+                "clean_train_adv_eval": "0.0",
+                "clean_train_clean_eval": "0.0",
+                "train_adv_train_adv_eval": "0.0",
+                "train_adv_train_clean_eval": "0.0",
+                "train_clean_train_adv_eval": "0.0",
+                "train_clean_train_clean_eval": "0.0"
+            }
+        },
+        "model_3_c": {
+            "architecture": "ResNet56_v2",
+            "folder_path": "saved_models/cifar10_ResNet56_v2",
+            "parent_key": "model_3_0",
+            "file_name": "cifar10_ResNet56_v2_model_fgsm_c_train.h5",
+            "adv_training": true,
+            "attacker_key": "fgsm_c",
+            "threat_models": [
+                "black_box_B"
+            ],
+            "train_params": {
+                "batch_size": 128,
+                "learning_rate": 0.005,
+                "nb_epochs": 200
+            },
+            "reeval": false,
+            "training_finished": true,
+            "attack_stats": {
+                "L1": "94.7621",
+                "L2": "1.72094",
+                "Linf": "0.03137",
+                "%pix": "98.896"
+            },
+            "report": {
+                "adv_train_adv_eval": "0.8172",
+                "adv_train_clean_eval": "0.8324",
+                "clean_train_adv_eval": "0.0",
+                "clean_train_clean_eval": "0.0",
+                "train_adv_train_adv_eval": "0.0",
+                "train_adv_train_clean_eval": "0.0",
+                "train_clean_train_adv_eval": "0.0",
+                "train_clean_train_clean_eval": "0.0"
+            }
+        }
+    },
+    "advgan": {
+        "GAN_Dense3_0001": {
+            "tested": true,
+            "train_params": {
+                "alpha": 1.0,
+                "beta": 1.0,
+                "c_hinge": 4.0,
+                "rr_alpha": Infinity,
+                "d_loss": "least squares",
+                "x_loss": "L2",
+                "g_arch": "Dense3",
+                "d_arch": "A",
+                "model_key": "model_1_a",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "output_folder": "CIFAR10_GAN_Dense3_0001_D[A]_f[model_1_a]_alph[1.000]_beta[1.000]_c[4.0]",
+                "batch_size": 64,
+                "epochs": 40,
+                "train_gan": false
+            },
+            "epochs_trained": 40
+        },
+        "GAN_Dense3_0002": {
+            "tested": true,
+            "train_params": {
+                "alpha": 1.0,
+                "beta": 1.0,
+                "c_hinge": 3.0,
+                "rr_alpha": Infinity,
+                "d_loss": "least squares",
+                "x_loss": "L2",
+                "g_arch": "Dense3",
+                "d_arch": "A",
+                "model_key": "model_1_a",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "output_folder": "CIFAR10_GAN_Dense3_0002_D[A]_f[model_1_a]_alph[1.000]_beta[1.000]_c[3.0]",
+                "batch_size": 64,
+                "epochs": 40,
+                "train_gan": false
+            },
+            "epochs_trained": 40
+        },
+        "GAN_Dense3_0003": {
+            "tested": true,
+            "train_params": {
+                "alpha": 1.0,
+                "beta": 1.0,
+                "c_hinge": 2.0,
+                "rr_alpha": Infinity,
+                "d_loss": "least squares",
+                "x_loss": "L2",
+                "g_arch": "Dense3",
+                "d_arch": "A",
+                "model_key": "model_1_a",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "output_folder": "CIFAR10_GAN_Dense3_0003_D[A]_f[model_1_a]_alph[1.000]_beta[1.000]_c[2.0]",
+                "batch_size": 64,
+                "epochs": 40,
+                "train_gan": false
+            },
+            "epochs_trained": 40
+        },
+        "GAN_Dense3_0004": {
+            "tested": true,
+            "train_params": {
+                "alpha": 1.0,
+                "beta": 2.0,
+                "c_hinge": 2.0,
+                "rr_alpha": Infinity,
+                "d_loss": "least squares",
+                "x_loss": "L2",
+                "g_arch": "Dense3",
+                "d_arch": "A",
+                "model_key": "model_1_a",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "output_folder": "CIFAR10_GAN_Dense3_0004_D[A]_f[model_1_a]_alph[1.000]_beta[2.000]_c[2.0]",
+                "batch_size": 64,
+                "epochs": 40,
+                "train_gan": false
+            },
+            "epochs_trained": 40
+        },
+        "GAN_Dense3_0005": {
+            "tested": true,
+            "train_params": {
+                "alpha": 1.0,
+                "beta": 0.5,
+                "c_hinge": 1.0,
+                "rr_alpha": Infinity,
+                "d_loss": "least squares",
+                "x_loss": "L2",
+                "g_arch": "Dense3",
+                "d_arch": "A",
+                "model_key": "model_1_a",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "output_folder": "CIFAR10_GAN_Dense3_0005_D[A]_f[model_1_a]_alph[1.000]_beta[0.500]_c[1.0]",
+                "batch_size": 64,
+                "epochs": 40,
+                "train_gan": false
+            },
+            "epochs_trained": 40
+        },
+        "GAN_Dense3_0006": {
+            "tested": true,
+            "train_params": {
+                "alpha": 0.5,
+                "beta": 0.5,
+                "c_hinge": 2.0,
+                "rr_alpha": Infinity,
+                "d_loss": "least squares",
+                "x_loss": "L2",
+                "g_arch": "Dense3",
+                "d_arch": "A",
+                "model_key": "model_1_a",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "output_folder": "CIFAR10_GAN_Dense3_0006_D[A]_f[model_1_a]_alph[0.500]_beta[0.500]_c[2.0]",
+                "batch_size": 64,
+                "epochs": 40,
+                "train_gan": false
+            },
+            "epochs_trained": 40
+        },
+        "GAN_ResNet12v1_0000": {
+            "tested": true,
+            "train_params": {
+                "alpha": 1.0,
+                "beta": 1.0,
+                "c_hinge": 1.0,
+                "rr_alpha": Infinity,
+                "d_loss": "least squares",
+                "x_loss": "L2",
+                "g_arch": "ResNet12v1",
+                "d_arch": "A",
+                "model_key": "model_2_0",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "output_folder": "CIFAR10_GAN_ResNet12v1_0000_D[A]_f[model_2_0]_alph[1.000]_beta[1.000]_c[1.0]",
+                "batch_size": 64,
+                "epochs": 40,
+                "train_gan": false,
+                "threat_model": "white_box",
+                "distillation_method": ""
+            },
+            "epochs_trained": 40
+        },
+        "GAN_ResNet12v1_0001": {
+            "tested": true,
+            "train_params": {
+                "alpha": 1.0,
+                "beta": 1.0,
+                "c_hinge": 1.0,
+                "rr_alpha": Infinity,
+                "d_loss": "least squares",
+                "x_loss": "L2",
+                "g_arch": "ResNet12v1",
+                "d_arch": "A",
+                "model_key": "model_2_0",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "output_folder": "CIFAR10_GAN_ResNet12v1_0001_D[A]_f[model_2_0]_alph[1.000]_beta[1.000]_c[1.0]",
+                "batch_size": 64,
+                "epochs": 50,
+                "train_gan": false,
+                "threat_model": "white_box",
+                "distillation_method": ""
+            },
+            "epochs_trained": 50
+        },
+        "GAN_ResNet12v2_0000": {
+            "tested": true,
+            "train_params": {
+                "alpha": 1.0,
+                "beta": 1.0,
+                "c_hinge": 1.0,
+                "rr_alpha": Infinity,
+                "d_loss": "least squares",
+                "x_loss": "L2",
+                "g_arch": "ResNet12v2",
+                "d_arch": "A",
+                "model_key": "model_2_0",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "output_folder": "CIFAR10_GAN_ResNet12v2_0000_D[A]_f[model_2_0]_alph[1.000]_beta[1.000]_c[1.0]",
+                "batch_size": 64,
+                "epochs": 40,
+                "train_gan": false,
+                "threat_model": "white_box",
+                "distillation_method": ""
+            },
+            "epochs_trained": 40
+        },
+        "GAN_ResNet22v2_0000": {
+            "tested": true,
+            "train_params": {
+                "alpha": 1.0,
+                "beta": 1.0,
+                "c_hinge": 1.0,
+                "rr_alpha": Infinity,
+                "d_loss": "least squares",
+                "x_loss": "L2",
+                "g_arch": "ResNet22v2",
+                "d_arch": "A",
+                "model_key": "model_2_0",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "output_folder": "CIFAR10_GAN_ResNet22v2_0000_D[A]_f[model_2_0]_alph[1.000]_beta[1.000]_c[1.0]",
+                "batch_size": 64,
+                "epochs": 40,
+                "train_gan": false,
+                "threat_model": "white_box",
+                "distillation_method": ""
+            },
+            "epochs_trained": 40
+        },
+        "GAN_ResNet22v2_0001": {
+            "tested": false,
+            "train_params": {
+                "alpha": 1.0,
+                "beta": 1.0,
+                "c_hinge": 1.0,
+                "rr_alpha": Infinity,
+                "d_loss": "least squares",
+                "x_loss": "L2",
+                "g_arch": "ResNet22v2",
+                "d_arch": "A",
+                "model_key": "model_2_0",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "parent_key": "GAN_ResNet22v2_0000",
+                "output_folder": "CIFAR10_GAN_ResNet22v2_0001_D[A]_f[model_2_0]_alph[1.000]_beta[1.000]_c[1.0]",
+                "batch_size": 64,
+                "epochs": 43,
+                "train_gan": false,
+                "threat_model": "white_box",
+                "distillation_method": ""
+            },
+            "epochs_trained": 43
+        },
+        "GAN_ResNet22v2_0002": {
+            "tested": false,
+            "train_params": {
+                "alpha": 1.0,
+                "beta": 1.0,
+                "c_hinge": 1.0,
+                "rr_alpha": Infinity,
+                "d_loss": "least squares",
+                "x_loss": "L2",
+                "g_arch": "ResNet22v2",
+                "d_arch": "A",
+                "model_key": "model_2_0",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "parent_key": "GAN_ResNet22v2_0000",
+                "output_folder": "CIFAR10_GAN_ResNet22v2_0002_D[A]_f[model_2_0]_alph[1.000]_beta[1.000]_c[1.0]",
+                "batch_size": 64,
+                "epochs": 50,
+                "train_gan": false,
+                "clip_eps": 0.03137,
+                "threat_model": "white_box",
+                "distillation_method": ""
+            },
+            "epochs_trained": 50
+        },
+        "GAN_ResNet22v2_0003": {
+            "tested": true,
+            "train_params": {
+                "alpha": 1.0,
+                "beta": 2.0,
+                "c_hinge": 1.0,
+                "rr_alpha": Infinity,
+                "d_loss": "least squares",
+                "x_loss": "L2",
+                "g_arch": "ResNet22v2",
+                "d_arch": "A",
+                "model_key": "model_2_0",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "output_folder": "CIFAR10_GAN_ResNet22v2_0003_D[A]_f[model_2_0]_alph[1.000]_beta[2.000]_c[1.0]",
+                "batch_size": 64,
+                "epochs": 40,
+                "train_gan": false,
+                "threat_model": "black_box",
+                "distillation_method": "static",
+                "black_box_model_key": "model_3_0"
+            },
+            "epochs_trained": 40
+        },
+        "GAN_ResNet22v2D_0000": {
+            "tested": true,
+            "train_params": {
+                "alpha": 1.0,
+                "beta": 2.0,
+                "c_hinge": 2.0,
+                "rr_alpha": Infinity,
+                "d_loss": "least squares",
+                "x_loss": "L2",
+                "g_arch": "ResNet22v2D",
+                "d_arch": "A",
+                "model_key": "model_2_0",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "output_folder": "",
+                "batch_size": 64,
+                "epochs": 40,
+                "train_gan": false,
+                "threat_model": "black_box",
+                "distillation_method": "dynamic",
+                "black_box_model_key": "model_3_0"
+            },
+            "epochs_trained": 40
+        },
+        "GAN_ResNet23v2C_0000": {
+            "tested": false,
+            "train_params": {
+                "alpha": 2.0,
+                "beta": 1.0,
+                "c_hinge": 1.0,
+                "rr_alpha": Infinity,
+                "d_loss": "least squares",
+                "x_loss": "L2",
+                "g_arch": "ResNet23v2C",
+                "d_arch": "A",
+                "model_key": "model_2_0",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "output_folder": "CIFAR10_GAN_ResNet22v2_0003_D[A]_f[model_2_0]_alph[1.000]_beta[2.000]_c[1.0]",
+                "batch_size": 64,
+                "epochs": 40,
+                "train_gan": false,
+                "threat_model": "black_box",
+                "distillation_method": "static",
+                "black_box_model_key": "model_3_0"
+            },
+            "epochs_trained": 40
+        },
+        "GAN_ResNet23v2C_0001": {
+            "tested": false,
+            "train_params": {
+                "alpha": 2.0,
+                "beta": 2.0,
+                "c_hinge": 1.0,
+                "rr_alpha": Infinity,
+                "d_loss": "least squares",
+                "x_loss": "L2",
+                "g_arch": "ResNet23v2C",
+                "d_arch": "A",
+                "model_key": "model_2_0",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "output_folder": "CIFAR10_GAN_ResNet23v2C_0001_D[A]_f[model_2_0]_alph[2.000]_beta[2.000]_c[1.0]",
+                "batch_size": 64,
+                "epochs": 40,
+                "train_gan": false,
+                "threat_model": "black_box",
+                "distillation_method": "static",
+                "black_box_model_key": "model_3_0"
+            },
+            "epochs_trained": 3
+        },
+        "GAN_ResNet13v1C_0000": {
+            "tested": false,
+            "train_params": {
+                "alpha": 2.0,
+                "beta": 2.0,
+                "c_hinge": 1.0,
+                "rr_alpha": Infinity,
+                "d_loss": "least squares",
+                "x_loss": "L2",
+                "g_arch": "ResNet13v1C",
+                "d_arch": "A",
+                "model_key": "model_2_0",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "output_folder": "CIFAR10_GAN_ResNet23v2C_0001_D[A]_f[model_2_0]_alph[2.000]_beta[2.000]_c[1.0]",
+                "batch_size": 64,
+                "epochs": 40,
+                "train_gan": false,
+                "threat_model": "black_box",
+                "distillation_method": "static",
+                "black_box_model_key": "model_3_0"
+            },
+            "epochs_trained": 3
+        },
+        "GAN_ResNet22v3D_0000": {
+            "tested": true,
+            "train_params": {
+                "alpha": 2.0,
+                "beta": 1.0,
+                "c_hinge": 1.0,
+                "rr_alpha": Infinity,
+                "d_loss": "least squares",
+                "x_loss": "L2",
+                "g_arch": "ResNet22v3D",
+                "d_arch": "A",
+                "model_key": "model_2_0",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "output_folder": "CIFAR10_GAN_ResNet22v3D_0000_D[A]_f[model_2_0]_alph[2.000]_beta[1.000]_c[1.0]",
+                "batch_size": 64,
+                "epochs": 40,
+                "train_gan": false,
+                "threat_model": "black_box",
+                "distillation_method": "static",
+                "black_box_model_key": "model_3_0"
+            },
+            "epochs_trained": 40
+        },
+        "GAN_ResNet22v3D_0001": {
+            "tested": true,
+            "train_params": {
+                "alpha": 2.0,
+                "beta": 1.0,
+                "c_hinge": 1.0,
+                "rr_alpha": Infinity,
+                "d_loss": "least squares",
+                "x_loss": "L2",
+                "g_arch": "ResNet22v3D",
+                "d_arch": "A",
+                "model_key": "model_2_0",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "output_folder": "CIFAR10_GAN_ResNet22v3D_0001_D[A]_f[model_2_0]_alph[2.000]_beta[1.000]_c[1.0]",
+                "batch_size": 64,
+                "epochs": 40,
+                "train_gan": false,
+                "threat_model": "white_box",
+                "distillation_method": "",
+                "black_box_model_key": ""
+            },
+            "epochs_trained": 40
+        },
+        "GAN_ResNet22v3D_0101": {
+            "tested": true,
+            "train_params": {
+                "alpha": 2.0,
+                "beta": 1.0,
+                "c_hinge": 1.0,
+                "rr_alpha": Infinity,
+                "d_loss": "least squares maximally real",
+                "x_loss": "L2",
+                "g_arch": "ResNet22v3D",
+                "d_arch": "A",
+                "model_key": "model_2_0",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "output_folder": "CIFAR10_GAN_ResNet22v3D_0101_D[A]_f[model_2_0]_alph[2.000]_beta[1.000]_c[1.0]",
+                "batch_size": 64,
+                "epochs": 40,
+                "train_gan": false,
+                "threat_model": "white_box",
+                "distillation_method": "",
+                "black_box_model_key": ""
+            },
+            "epochs_trained": 40
+        },
+        "GAN_ResNet22v3D_0201": {
+            "tested": true,
+            "train_params": {
+                "alpha": 2.0,
+                "beta": 1.0,
+                "c_hinge": 1.0,
+                "rr_alpha": Infinity,
+                "d_loss": "one sided least squares",
+                "x_loss": "L2",
+                "g_arch": "ResNet22v3D",
+                "d_arch": "A",
+                "model_key": "model_2_0",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "output_folder": "CIFAR10_GAN_ResNet22v3D_0201_D[A]_f[model_2_0]_alph[2.000]_beta[1.000]_c[1.0]",
+                "batch_size": 64,
+                "epochs": 40,
+                "train_gan": false,
+                "threat_model": "white_box",
+                "distillation_method": "",
+                "black_box_model_key": ""
+            },
+            "epochs_trained": 40
+        },
+        "GAN_Dense3_0301": {
+            "tested": true,
+            "train_params": {
+                "alpha": 2.0,
+                "beta": 1.0,
+                "c_hinge": 1.0,
+                "rr_alpha": Infinity,
+                "d_loss": "one sided least squares",
+                "x_loss": "L2",
+                "g_arch": "Dense3",
+                "d_arch": "A",
+                "model_key": "model_2_0",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "output_folder": "CIFAR10_GAN_Dense3_0301_D[A]_f[model_2_0]_alph[2.000]_beta[1.000]_c[1.0]",
+                "batch_size": 64,
+                "epochs": 40,
+                "train_gan": false,
+                "threat_model": "white_box",
+                "distillation_method": "",
+                "black_box_model_key": ""
+            },
+            "epochs_trained": 40
+        },
+        "GAN_ResNet22v3D_0002": {
+            "tested": true,
+            "train_params": {
+                "alpha": 2.0,
+                "beta": 1.0,
+                "c_hinge": 1.0,
+                "rr_alpha": Infinity,
+                "d_loss": "least squares",
+                "x_loss": "L2",
+                "g_arch": "ResNet22v3D",
+                "d_arch": "A",
+                "model_key": "model_1_f",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "output_folder": "CIFAR10_GAN_ResNet22v3D_0002_D[A]_f[model_1_f]_alph[2.000]_beta[1.000]_c[1.0]",
+                "batch_size": 64,
+                "epochs": 40,
+                "train_gan": false,
+                "threat_model": "white_box"
+            },
+            "epochs_trained": 40
+        },
+        "GAN_ResNet22v3D_0003": {
+            "tested": true,
+            "train_params": {
+                "alpha": 2.0,
+                "beta": 1.0,
+                "c_hinge": 2.0,
+                "rr_alpha": Infinity,
+                "d_loss": "least squares",
+                "x_loss": "L2",
+                "g_arch": "ResNet22v3D",
+                "d_arch": "A",
+                "model_key": "model_1_f",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "output_folder": "CIFAR10_GAN_ResNet22v3D_0002_D[A]_f[model_1_f]_alph[2.000]_beta[1.000]_c[1.0]",
+                "batch_size": 64,
+                "epochs": 40,
+                "train_gan": false,
+                "threat_model": "white_box"
+            },
+            "epochs_trained": 40
+        },
+        "GAN_ResNet22v3D_0004": {
+            "tested": true,
+            "train_params": {
+                "alpha": 2.0,
+                "beta": 1.0,
+                "c_hinge": 3.0,
+                "rr_alpha": Infinity,
+                "d_loss": "least squares",
+                "x_loss": "L2",
+                "g_arch": "ResNet22v3D",
+                "d_arch": "A",
+                "model_key": "model_1_f",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "output_folder": "CIFAR10_GAN_ResNet22v3D_0002_D[A]_f[model_1_f]_alph[2.000]_beta[1.000]_c[1.0]",
+                "batch_size": 64,
+                "epochs": 40,
+                "train_gan": false,
+                "threat_model": "white_box"
+            },
+            "epochs_trained": 40
+        },
+        "GAN_ResNet22v3D_0005": {
+            "tested": true,
+            "train_params": {
+                "alpha": 2.0,
+                "beta": 1.0,
+                "c_hinge": 1.0,
+                "rr_alpha": Infinity,
+                "d_loss": "least squares",
+                "x_loss": "L2",
+                "g_arch": "ResNet22v3D",
+                "d_arch": "A",
+                "model_key": "model_2_0",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "output_folder": "CIFAR10_GAN_ResNet22v3D_0005_D[A]_f[model_2_0]_alph[2.000]_beta[1.000]_c[1.0]",
+                "batch_size": 64,
+                "epochs": 40,
+                "train_gan": false,
+                "threat_model": "black_box",
+                "distillation_method": "dynamic",
+                "black_box_model_key": "model_3_0"
+            },
+            "epochs_trained": 40
+        },
+        "GAN_ResNet22v3D_0006": {
+            "tested": true,
+            "train_params": {
+                "alpha": 2.0,
+                "beta": 1.0,
+                "c_hinge": 1.0,
+                "rr_alpha": Infinity,
+                "d_loss": "least squares",
+                "x_loss": "L2",
+                "g_arch": "ResNet22v3D",
+                "d_arch": "A",
+                "model_key": "model_2_0",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "output_folder": "CIFAR10_GAN_ResNet22v3D_0006_D[A]_f[model_2_0]_alph[2.000]_beta[1.000]_c[1.0]",
+                "batch_size": 64,
+                "epochs": 40,
+                "train_gan": false,
+                "threat_model": "black_box",
+                "distillation_method": "static",
+                "black_box_model_key": "model_3_a"
+            },
+            "epochs_trained": 40
+        },
+        "GAN_ResNet22v3D_0007": {
+            "tested": true,
+            "train_params": {
+                "alpha": 2.0,
+                "beta": 1.0,
+                "c_hinge": 1.0,
+                "rr_alpha": Infinity,
+                "d_loss": "least squares",
+                "x_loss": "L2",
+                "g_arch": "ResNet22v3D",
+                "d_arch": "A",
+                "model_key": "model_2_0",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "output_folder": "CIFAR10_GAN_ResNet22v3D_0007_D[A]_f[model_2_0]_alph[2.000]_beta[1.000]_c[1.0]",
+                "batch_size": 64,
+                "epochs": 40,
+                "train_gan": false,
+                "threat_model": "black_box",
+                "distillation_method": "dynamic",
+                "black_box_model_key": "model_3_a"
+            },
+            "epochs_trained": 40
+        },
+        "GAN_ResNet22v3D_0008": {
+            "tested": true,
+            "train_params": {
+                "alpha": 2.0,
+                "beta": 1.0,
+                "c_hinge": 1.0,
+                "rr_alpha": Infinity,
+                "d_loss": "least squares",
+                "x_loss": "L2",
+                "g_arch": "ResNet22v3D",
+                "d_arch": "A",
+                "model_key": "model_2_0",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "output_folder": "CIFAR10_GAN_ResNet22v3D_0008_D[A]_f[model_2_0]_alph[2.000]_beta[1.000]_c[1.0]",
+                "batch_size": 64,
+                "epochs": 40,
+                "train_gan": false,
+                "threat_model": "black_box",
+                "distillation_method": "static",
+                "black_box_model_key": "model_3_b"
+            },
+            "epochs_trained": 40
+        },
+        "GAN_ResNet22v3D_0009": {
+            "tested": true,
+            "train_params": {
+                "alpha": 2.0,
+                "beta": 1.0,
+                "c_hinge": 1.0,
+                "rr_alpha": Infinity,
+                "d_loss": "least squares",
+                "x_loss": "L2",
+                "g_arch": "ResNet22v3D",
+                "d_arch": "A",
+                "model_key": "model_2_0",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "output_folder": "CIFAR10_GAN_ResNet22v3D_0009_D[A]_f[model_2_0]_alph[2.000]_beta[1.000]_c[1.0]",
+                "batch_size": 64,
+                "epochs": 40,
+                "train_gan": false,
+                "threat_model": "black_box",
+                "distillation_method": "dynamic",
+                "black_box_model_key": "model_3_b"
+            },
+            "epochs_trained": 40
+        },
+        "GAN_ResNet22v3D_0201": {
+            "tested": true,
+            "train_params": {
+                "alpha": 2.0,
+                "beta": 1.0,
+                "c_hinge": 1.0,
+                "rr_alpha": Infinity,
+                "d_loss": "one sided least squares",
+                "x_loss": "L2",
+                "g_arch": "ResNet22v3D",
+                "d_arch": "A",
+                "model_key": "model_2_0",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "output_folder": "CIFAR10_GAN_ResNet22v3D_0201_D[A]_f[model_2_0]_alph[2.000]_beta[1.000]_c[1.0]",
+                "batch_size": 64,
+                "epochs": 40,
+                "train_gan": false,
+                "threat_model": "white_box",
+                "distillation_method": "",
+                "black_box_model_key": ""
+            },
+            "epochs_trained": 40
+        },
+        "GAN_ResNet22v3D_0013": {
+            "tested": true,
+            "train_params": {
+                "alpha": 2.0,
+                "beta": 1.0,
+                "c_hinge": 2.0,
+                "rr_alpha": Infinity,
+                "d_loss": "least squares",
+                "x_loss": "L2",
+                "g_arch": "ResNet22v3D",
+                "d_arch": "A",
+                "model_key": "model_2_0",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "output_folder": "CIFAR10_GAN_ResNet22v3D_0013_D[A]_f[model_2_0]_alph[2.000]_beta[1.000]_c[2.0]",
+                "batch_size": 64,
+                "epochs": 40,
+                "train_gan": false,
+                "threat_model": "black_box",
+                "distillation_method": "dynamic",
+                "black_box_model_key": "model_3_b"
+            },
+            "epochs_trained": 40
+        },
+        "GAN_ResNet22v3D_0014": {
+            "tested": true,
+            "train_params": {
+                "alpha": 2.0,
+                "beta": 1.0,
+                "c_hinge": 3.0,
+                "rr_alpha": Infinity,
+                "d_loss": "least squares",
+                "x_loss": "L2",
+                "g_arch": "ResNet22v3D",
+                "d_arch": "A",
+                "model_key": "model_2_0",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "output_folder": "CIFAR10_GAN_ResNet22v3D_0014_D[A]_f[model_2_0]_alph[2.000]_beta[1.000]_c[3.0]",
+                "batch_size": 64,
+                "epochs": 40,
+                "train_gan": false,
+                "threat_model": "black_box",
+                "distillation_method": "dynamic",
+                "black_box_model_key": "model_3_b"
+            },
+            "epochs_trained": 40
+        },
+        "GAN_ResNet22v3D_0010": {
+            "tested": false,
+            "train_params": {
+                "alpha": 2.0,
+                "beta": 1.0,
+                "c_hinge": 1.0,
+                "rr_alpha": Infinity,
+                "d_loss": "least squares",
+                "x_loss": "L2",
+                "g_arch": "ResNet22v3D",
+                "d_arch": "A",
+                "model_key": "model_2_0",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "output_folder": "CIFAR10_GAN_ResNet22v3D_0007_D[A]_f[model_2_0]_alph[2.000]_beta[1.000]_c[1.0]",
+                "batch_size": 64,
+                "epochs": 40,
+                "train_gan": false,
+                "threat_model": "black_box",
+                "distillation_method": "static",
+                "black_box_model_key": "model_3_c"
+            },
+            "epochs_trained": 40
+        },
+        "GAN_ResNet22v3D_0011": {
+            "tested": false,
+            "train_params": {
+                "alpha": 2.0,
+                "beta": 1.0,
+                "c_hinge": 1.0,
+                "rr_alpha": Infinity,
+                "d_loss": "least squares",
+                "x_loss": "L2",
+                "g_arch": "ResNet22v3D",
+                "d_arch": "A",
+                "model_key": "model_2_0",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "output_folder": "CIFAR10_GAN_ResNet22v3D_0007_D[A]_f[model_2_0]_alph[2.000]_beta[1.000]_c[1.0]",
+                "batch_size": 64,
+                "epochs": 40,
+                "train_gan": false,
+                "threat_model": "black_box",
+                "distillation_method": "dynamic",
+                "black_box_model_key": "model_3_c"
+            },
+            "epochs_trained": 40
+        },
+        "GAN_ResNet22v3D_0012": {
+            "tested": false,
+            "train_params": {
+                "alpha": 2.0,
+                "beta": 1.0,
+                "c_hinge": 1.0,
+                "rr_alpha": Infinity,
+                "d_loss": "least squares",
+                "x_loss": "L2",
+                "g_arch": "ResNet22v3D",
+                "d_arch": "A",
+                "model_key": "model_2_0",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "output_folder": "CIFAR10_GAN_ResNet22v3D_0007_D[A]_f[model_2_0]_alph[2.000]_beta[1.000]_c[1.0]",
+                "batch_size": 64,
+                "epochs": 40,
+                "train_gan": false,
+                "threat_model": "black_box",
+                "distillation_method": "dynamic",
+                "black_box_model_key": "model_3_c"
+            },
+            "epochs_trained": 40
+        },
+        "GAN_ResNet22v2n_0000": {
+            "tested": true,
+            "train_params": {
+                "alpha": 1.0,
+                "beta": 1.0,
+                "c_hinge": 1.0,
+                "rr_alpha": Infinity,
+                "d_loss": "least squares",
+                "x_loss": "L2",
+                "g_arch": "ResNet22v2n",
+                "d_arch": "A",
+                "model_key": "model_2_0",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "output_folder": "CIFAR10_GAN_ResNet22v2n_0000_D[A]_f[model_2_0]_alph[1.000]_beta[1.000]_c[1.0]",
+                "batch_size": 64,
+                "epochs": 40,
+                "train_gan": false,
+                "threat_model": "white_box",
+                "distillation_method": ""
+            },
+            "epochs_trained": 40
+        },
+        "GAN_ResNet20Xiao_0000": {
+            "tested": false,
+            "train_params": {
+                "alpha": 1.0,
+                "beta": 1.0,
+                "c_hinge": 1.0,
+                "rr_alpha": Infinity,
+                "d_loss": "least squares",
+                "x_loss": "L2",
+                "g_arch": "ResNet20Xiao",
+                "d_arch": "A",
+                "model_key": "model_2_0",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "output_folder": "CIFAR10_GAN_ResNet20Xiao_0000_D[A]_f[model_2_0]_alph[1.000]_beta[1.000]_c[1.0]",
+                "batch_size": 64,
+                "epochs": 40,
+                "train_gan": false,
+                "threat_model": "white_box",
+                "distillation_method": ""
+            },
+            "epochs_trained": 40
+        },
+        "GAN_ResNet20Xiao_0001": {
+            "tested": false,
+            "train_params": {
+                "alpha": 1.0,
+                "beta": 1.0,
+                "c_hinge": 4.0,
+                "rr_alpha": Infinity,
+                "d_loss": "least squares",
+                "x_loss": "L2",
+                "g_arch": "ResNet20Xiao",
+                "d_arch": "A",
+                "model_key": "model_2_0",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "output_folder": "CIFAR10_GAN_ResNet18Xiao_0000_D[A]_f[model_2_0]_alph[1.000]_beta[1.000]_c[1.0]",
+                "batch_size": 64,
+                "epochs": 40,
+                "train_gan": false,
+                "threat_model": "white_box",
+                "distillation_method": ""
+            },
+            "epochs_trained": 3
+        },
+        "GAN_ResNet12v1_0002": {
+            "tested": false,
+            "train_params": {
+                "alpha": 0.5,
+                "beta": 0.5,
+                "c_hinge": 4.0,
+                "rr_alpha": Infinity,
+                "d_loss": "least squares",
+                "x_loss": "L2",
+                "g_arch": "ResNet12v1",
+                "d_arch": "A",
+                "model_key": "model_2_0",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "parent_key": null,
+                "clip_eps": null,
+                "output_folder": "CIFAR10_GAN_ResNet12v1_0002_D[A]_f[model_2_0]_alph[0.500]_beta[0.500]_c[4.0]",
+                "batch_size": 64,
+                "epochs": 40,
+                "train_gan": false,
+                "threat_model": "white_box",
+                "distillation_method": ""
+            },
+            "epochs_trained": 3
+        },
+        "GAN_ResNet12v1_0003": {
+            "tested": false,
+            "train_params": {
+                "alpha": 0.5,
+                "beta": 0.5,
+                "c_hinge": 1.0,
+                "rr_alpha": Infinity,
+                "d_loss": "least squares",
+                "x_loss": "L2",
+                "g_arch": "ResNet12v1",
+                "d_arch": "A",
+                "model_key": "model_2_0",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "parent_key": null,
+                "clip_eps": null,
+                "output_folder": "CIFAR10_GAN_ResNet12v1_0003_D[A]_f[model_2_0]_alph[0.500]_beta[0.500]_c[1.0]",
+                "batch_size": 64,
+                "epochs": 3,
+                "train_gan": false,
+                "threat_model": "white_box",
+                "distillation_method": ""
+            },
+            "epochs_trained": 3
+        },
+        "GAN_Dense3_0000": {
+            "tested": false,
+            "train_params": {
+                "alpha": 0.5,
+                "beta": 0.5,
+                "c_hinge": 4.0,
+                "rr_alpha": Infinity,
+                "d_loss": "least squares",
+                "x_loss": "L2",
+                "g_arch": "Dense3",
+                "d_arch": "A",
+                "model_key": "model_1_a",
+                "dataset": "CIFAR10",
+                "targeted": true,
+                "parent_key": null,
+                "clip_eps": null,
+                "threat_model": "white_box",
+                "distillation_method": "",
+                "black_box_model_key": "",
+                "output_folder": "CIFAR10_GAN_Dense3_0000_D[A]_f[model_1_a]_alph[0.500]_beta[0.500]_c[4.0]",
+                "batch_size": 64,
+                "epochs": 40,
+                "train_gan": false
+            },
+            "epochs_trained": 3
+        }
+    }
+}

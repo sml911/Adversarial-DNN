@@ -1,0 +1,8 @@
+Experiment Name: Discriminator Loss function white-box evaluation.
+
+Scope: Run three end-to-end GAN trainings using a white-box setting and with a nominal baseline.
+	1. Baseline (AdvGan_3D_0001): a = -1 (d_real), b = 1 (d_fake), c = 0 (d_target)
+	2. Maximally real (AdvGan_3D_0101): a = -1 (d_real), b = 1 (d_fake), c = -1 (d_target)
+        3. Baseline hinge (AdvGan_3D_0201): Same as baseline except the generator loss function has a value of 0 for D(G(x))<=0
+
+ToDo: use plotly to show difference in loss functions.

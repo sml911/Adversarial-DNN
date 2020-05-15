@@ -1,0 +1,1152 @@
+{
+    "model_2_0": {
+        "fgsm_c": {
+            "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\fgsm_c\\model_2_0_fgsm_c__model_acc.p",
+            "black_box": {
+                "model_3_0": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\fgsm_c\\model_2_0_fgsm_c_model_3_0_model_acc.p",
+                    "clean_model_acc": 0.9244,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\fgsm_c\\model_2_0_fgsm_c_model_3_0_target_acc.p",
+                    "attack_stats": {
+                        "L1": 95.06378173828125,
+                        "L2": 1.724215316772461,
+                        "Linf": 0.031370019912719725,
+                        "%pix": 99.12435302734374,
+                        "num_batches": 20,
+                        "time": "1.6ms"
+                    }
+                },
+                "model_3_a": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\fgsm_c\\model_2_0_fgsm_c_model_3_a_model_acc.p",
+                    "clean_model_acc": 0.9031,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\fgsm_c\\model_2_0_fgsm_c_model_3_a_target_acc.p",
+                    "attack_stats": {
+                        "L1": 95.06378173828125,
+                        "L2": 1.724215316772461,
+                        "Linf": 0.031370019912719725,
+                        "%pix": 99.12435302734374,
+                        "num_batches": 20,
+                        "time": "1.54ms"
+                    }
+                },
+                "model_3_b": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\fgsm_c\\model_2_0_fgsm_c_model_3_b_model_acc.p",
+                    "clean_model_acc": 0.7706,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\fgsm_c\\model_2_0_fgsm_c_model_3_b_target_acc.p",
+                    "attack_stats": {
+                        "L1": 95.06378173828125,
+                        "L2": 1.724215316772461,
+                        "Linf": 0.031370019912719725,
+                        "%pix": 99.12435302734374,
+                        "num_batches": 20,
+                        "time": "1.62ms"
+                    }
+                },
+                "model_3_c": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\fgsm_c\\model_2_0_fgsm_c_model_3_c_model_acc.p",
+                    "clean_model_acc": 0.8324,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\fgsm_c\\model_2_0_fgsm_c_model_3_c_target_acc.p",
+                    "attack_stats": {
+                        "L1": 95.06378173828125,
+                        "L2": 1.724215316772461,
+                        "Linf": 0.031370019912719725,
+                        "%pix": 99.12435302734374,
+                        "num_batches": 20,
+                        "time": "1.71ms"
+                    }
+                }
+            },
+            "black_box_sd": {
+                "model_3_0": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\fgsm_c\\distilled_surrogate\\static\\model_2_0_fgsm_c_model_3_0_model_acc.p",
+                    "clean_model_acc": 0.8998,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\fgsm_c\\distilled_surrogate\\static\\model_2_0_fgsm_c_model_3_0_target_acc.p",
+                    "attack_stats": {
+                        "L1": 94.97902221679688,
+                        "L2": 1.723388671875,
+                        "Linf": 0.031370019912719725,
+                        "%pix": 99.03670654296874,
+                        "num_batches": 20,
+                        "time": "1.92ms"
+                    }
+                },
+		"model_3_a": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\fgsm_c\\distilled_surrogate\\static\\model_2_0_fgsm_c_model_3_a_model_acc.p",
+                    "clean_model_acc": 0.9031,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\fgsm_c\\distilled_surrogate\\static\\model_2_0_fgsm_c_model_3_a_target_acc.p",
+                    "attack_stats": {}
+                },
+		"model_3_b": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\fgsm_c\\distilled_surrogate\\static\\model_2_0_fgsm_c_model_3_b_model_acc.p",
+                    "clean_model_acc": 0.7706,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\fgsm_c\\distilled_surrogate\\static\\model_2_0_fgsm_c_model_3_b_target_acc.p",
+                    "attack_stats": {}
+                },
+                "model_3_c": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\fgsm_c\\distilled_surrogate\\static\\model_2_0_fgsm_c_model_3_c_model_acc.p",
+                    "clean_model_acc": 0.8324,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\fgsm_c\\distilled_surrogate\\static\\model_2_0_fgsm_c_model_3_c_target_acc.p",
+                    "attack_stats": {
+                        "L1": 94.98301391601562,
+                        "L2": 1.7234338760375976,
+                        "Linf": 0.031370019912719725,
+                        "%pix": 99.0375732421875,
+                        "num_batches": 20,
+                        "time": "2.28ms"
+                    }
+                }
+            },
+            "black_box_dd": {
+                "model_3_0": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\fgsm_c\\distilled_surrogate\\dynamic\\model_2_0_fgsm_c_model_3_0_model_acc.p",
+                    "clean_model_acc": 0.8998,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\fgsm_c\\distilled_surrogate\\dynamic\\model_2_0_fgsm_c_model_3_0_target_acc.p",
+                    "attack_stats": {
+                    }
+                },
+		"model_3_a": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\fgsm_c\\distilled_surrogate\\dynamic\\model_2_0_fgsm_c_model_3_a_model_acc.p",
+                    "clean_model_acc": 0.9031,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\fgsm_c\\distilled_surrogate\\dynamic\\model_2_0_fgsm_c_model_3_a_target_acc.p",
+                    "attack_stats": {}
+                },
+		"model_3_b": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\fgsm_c\\distilled_surrogate\\dynamic\\model_2_0_fgsm_c_model_3_b_model_acc.p",
+                    "clean_model_acc": 0.7706,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\fgsm_c\\distilled_surrogate\\dynamic\\model_2_0_fgsm_c_model_3_b_target_acc.p",
+                    "attack_stats": {}
+                }
+            },
+            "clean_model_acc": 0.9227,
+            "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\fgsm_c\\model_2_0_fgsm_c__target_acc.p",
+            "attack_stats": {
+                "L1": 94.97560424804688,
+                "L2": 1.723338508605957,
+                "Linf": 0.031370019912719725,
+                "%pix": 99.03504028320313,
+                "num_batches": 20,
+                "time": "1.7ms"
+            }
+        },
+        "pgd_b": {
+            "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\pgd_b\\model_2_0_pgd_b__model_acc.p",
+            "clean_model_acc": 0.9227,
+            "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\pgd_b\\model_2_0_pgd_b__target_acc.p",
+            "attack_stats": {
+                "L1": 55.90384521484375,
+                "L2": 1.1502277374267578,
+                "Linf": 0.031370019912719725,
+                "%pix": 89.26592407226562,
+                "num_batches": 20,
+                "time": "26.4ms"
+            },
+            "black_box": {
+                "model_3_0": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\pgd_b\\model_2_0_pgd_b_model_3_0_model_acc.p",
+                    "clean_model_acc": 0.9244,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\pgd_b\\model_2_0_pgd_b_model_3_0_target_acc.p",
+                    "attack_stats": {
+                        "L1": 55.94053955078125,
+                        "L2": 1.1507309913635253,
+                        "Linf": 0.031370019912719725,
+                        "%pix": 89.30750122070313,
+                        "num_batches": 20,
+                        "time": "20.9ms"
+                    }
+                },
+                "model_3_a": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\pgd_b\\model_2_0_pgd_b_model_3_a_model_acc.p",
+                    "clean_model_acc": 0.9031,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\pgd_b\\model_2_0_pgd_b_model_3_a_target_acc.p",
+                    "attack_stats": {
+                        "L1": 55.920233154296874,
+                        "L2": 1.150307846069336,
+                        "Linf": 0.031370019912719725,
+                        "%pix": 89.3152099609375,
+                        "num_batches": 20,
+                        "time": "20.4ms"
+                    }
+                },
+                "model_3_b": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\pgd_b\\model_2_0_pgd_b_model_3_b_model_acc.p",
+                    "clean_model_acc": 0.7706,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\pgd_b\\model_2_0_pgd_b_model_3_b_target_acc.p",
+                    "attack_stats": {
+                        "L1": 55.92774658203125,
+                        "L2": 1.1504656791687011,
+                        "Linf": 0.031370019912719725,
+                        "%pix": 89.32630615234375,
+                        "num_batches": 20,
+                        "time": "20.9ms"
+                    }
+                },
+                "model_3_c": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\pgd_b\\model_2_0_pgd_b_model_3_c_model_acc.p",
+                    "clean_model_acc": 0.8324,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\pgd_b\\model_2_0_pgd_b_model_3_c_target_acc.p",
+                    "attack_stats": {
+                        "L1": 55.900946044921874,
+                        "L2": 1.149979019165039,
+                        "Linf": 0.031370019912719725,
+                        "%pix": 89.29337768554687,
+                        "num_batches": 20,
+                        "time": "21.2ms"
+                    }
+                }
+            },
+            "black_box_sd": {
+		"model_3_0": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\pgd_b\\distilled_surrogate\\static\\model_2_0_pgd_b_model_3_0_model_acc.p",
+                    "clean_model_acc": 0.9244,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\pgd_b\\distilled_surrogate\\static\\model_2_0_pgd_b_model_3_0_target_acc.p",
+                    "attack_stats": {}
+                },
+		"model_3_a": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\pgd_b\\distilled_surrogate\\static\\model_2_0_pgd_b_model_3_a_model_acc.p",
+                    "clean_model_acc": 0.9031,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\pgd_b\\distilled_surrogate\\static\\model_2_0_pgd_b_model_3_a_target_acc.p",
+                    "attack_stats": {}
+                },
+		"model_3_b": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\pgd_b\\distilled_surrogate\\static\\model_2_0_pgd_b_model_3_b_model_acc.p",
+                    "clean_model_acc": 0.7706,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\pgd_b\\distilled_surrogate\\static\\model_2_0_pgd_b_model_3_b_target_acc.p",
+                    "attack_stats": {}
+                },
+                "model_3_c": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\pgd_b\\distilled_surrogate\\static\\model_2_0_pgd_b_model_3_c_model_acc.p",
+                    "clean_model_acc": 0.8324,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\pgd_b\\distilled_surrogate\\static\\model_2_0_pgd_b_model_3_c_target_acc.p",
+                    "attack_stats": {
+                        "L1": 63.1398193359375,
+                        "L2": 1.2731491088867188,
+                        "Linf": 0.031370019912719725,
+                        "%pix": 90.99468994140625,
+                        "num_batches": 20,
+                        "time": "27.5ms"
+                    }
+                }
+	    },
+            "black_box_dd": {
+		"model_3_0": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\pgd_b\\distilled_surrogate\\dynamic\\model_2_0_pgd_b_model_3_0_model_acc.p",
+                    "clean_model_acc": 0.9244,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\pgd_b\\distilled_surrogate\\dynamic\\model_2_0_pgd_b_model_3_0_target_acc.p",
+                    "attack_stats": {}
+                },
+		"model_3_a": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\pgd_b\\distilled_surrogate\\dynamic\\model_2_0_pgd_b_model_3_a_model_acc.p",
+                    "clean_model_acc": 0.9031,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\pgd_b\\distilled_surrogate\\dynamic\\model_2_0_pgd_b_model_3_a_target_acc.p",
+                    "attack_stats": {}
+                }
+            }
+        },
+        "advgan_12_a": {
+            "model_acc": {},
+            "black_box": {
+                "model_3_0": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_12_a\\model_2_0_advgan_12_a_model_acc.p",
+                    "clean_model_acc": 0.9244,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_12_a\\model_2_0_advgan_12_a_target_acc.p",
+                    "attack_stats": {
+                        "L1": 36.93173828125,
+                        "L2": 0.9965070724487305,
+                        "Linf": 0.08432697653770446,
+                        "%pix": 67.41996459960937,
+                        "num_batches": 20,
+                        "time": "1.67ms"
+                    }
+                },
+                "model_3_a": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_12_a\\model_2_0_advgan_12_a_model_acc.p",
+                    "clean_model_acc": 0.9031,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_12_a\\model_2_0_advgan_12_a_target_acc.p",
+                    "attack_stats": {
+                        "L1": 36.93173828125,
+                        "L2": 0.9965070724487305,
+                        "Linf": 0.08432697653770446,
+                        "%pix": 67.41996459960937,
+                        "num_batches": 20,
+                        "time": "1.61ms"
+                    }
+                },
+                "model_3_b": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_12_a\\model_2_0_advgan_12_a_model_acc.p",
+                    "clean_model_acc": 0.7706,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_12_a\\model_2_0_advgan_12_a_target_acc.p",
+                    "attack_stats": {
+                        "L1": 36.93173828125,
+                        "L2": 0.9965070724487305,
+                        "Linf": 0.08432697653770446,
+                        "%pix": 67.41996459960937,
+                        "num_batches": 20,
+                        "time": "1.68ms"
+                    }
+                }
+            }
+        },
+        "advgan_14_a": {
+            "model_acc": {},
+            "black_box": {
+                "model_3_0": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_14_a\\model_2_0_advgan_14_a_model_3_0_model_acc.p",
+                    "clean_model_acc": 0.9244,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_14_a\\model_2_0_advgan_14_a_model_3_0_target_acc.p",
+                    "attack_stats": {
+                        "L1": 74.91847534179688,
+                        "L2": 1.7883323669433593,
+                        "Linf": 0.16138300895690919,
+                        "%pix": 87.3610107421875,
+                        "num_batches": 20,
+                        "time": "2.89ms"
+                    }
+                },
+                "model_3_a": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_14_a\\model_2_0_advgan_14_a_model_3_a_model_acc.p",
+                    "clean_model_acc": 0.9031,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_14_a\\model_2_0_advgan_14_a_model_3_a_target_acc.p",
+                    "attack_stats": {
+                        "L1": 74.91847534179688,
+                        "L2": 1.7883323669433593,
+                        "Linf": 0.16138298511505128,
+                        "%pix": 87.36103515625,
+                        "num_batches": 20,
+                        "time": "3.02ms"
+                    }
+                },
+                "model_3_b": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_14_a\\model_2_0_advgan_14_a_model_3_b_model_acc.p",
+                    "clean_model_acc": 0.7706,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_14_a\\model_2_0_advgan_14_a_model_3_b_target_acc.p",
+                    "attack_stats": {
+                        "L1": 74.91847534179688,
+                        "L2": 1.788332176208496,
+                        "Linf": 0.16138298511505128,
+                        "%pix": 87.36107177734375,
+                        "num_batches": 20,
+                        "time": "3.25ms"
+                    }
+                },
+                "model_3_c": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_14_a\\model_2_0_advgan_14_a_model_3_c_model_acc.p",
+                    "clean_model_acc": 0.8324,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_14_a\\model_2_0_advgan_14_a_model_3_c_target_acc.p",
+                    "attack_stats": {
+                        "L1": 74.91847534179688,
+                        "L2": 1.7883323669433593,
+                        "Linf": 0.16138299703598022,
+                        "%pix": 87.36103515625,
+                        "num_batches": 20,
+                        "time": "3.38ms"
+                    }
+                }
+            }
+        },
+        "advgan_14_b": {
+            "model_acc": {},
+            "black_box": {
+                "model_3_0": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_14_b\\model_2_0_advgan_14_b_model_3_0_model_acc.p",
+                    "clean_model_acc": 0.9244,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_14_b\\model_2_0_advgan_14_b_model_3_0_target_acc.p",
+                    "attack_stats": {
+                        "L1": 56.83074951171875,
+                        "L2": 1.1874544143676757,
+                        "Linf": 0.031370019912719725,
+                        "%pix": 87.48134155273438,
+                        "num_batches": 20,
+                        "time": "2.37ms"
+                    }
+                },
+                "model_3_a": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_14_b\\model_2_0_advgan_14_b_model_3_a_model_acc.p",
+                    "clean_model_acc": 0.9031,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_14_b\\model_2_0_advgan_14_b_model_3_a_target_acc.p",
+                    "attack_stats": {
+                        "L1": 56.83074951171875,
+                        "L2": 1.1874544143676757,
+                        "Linf": 0.031370019912719725,
+                        "%pix": 87.48132934570313,
+                        "num_batches": 20,
+                        "time": "2.41ms"
+                    }
+                },
+                "model_3_b": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_14_b\\model_2_0_advgan_14_b_model_3_b_model_acc.p",
+                    "clean_model_acc": 0.7706,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_14_b\\model_2_0_advgan_14_b_model_3_b_target_acc.p",
+                    "attack_stats": {
+                        "L1": 56.83074951171875,
+                        "L2": 1.1874544143676757,
+                        "Linf": 0.031370019912719725,
+                        "%pix": 87.48132934570313,
+                        "num_batches": 20,
+                        "time": "2.41ms"
+                    }
+                }
+            }
+        },
+        "g+pgd_a": {
+            "model_acc": {},
+            "black_box": {
+                "model_3_0": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\g+pgd_a\\model_2_0_g+pgd_a_model_3_0_model_acc.p",
+                    "clean_model_acc": 0.9244,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\g+pgd_a\\model_2_0_g+pgd_a_model_3_0_target_acc.p",
+                    "attack_stats": {
+                        "L1": 55.800360107421874,
+                        "L2": 1.1613883018493651,
+                        "Linf": 0.031370019912719725,
+                        "%pix": 86.93108520507812,
+                        "num_batches": 20,
+                        "time": "4.88ms"
+                    }
+                },
+                "model_3_a": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\g+pgd_a\\model_2_0_g+pgd_a_model_3_a_model_acc.p",
+                    "clean_model_acc": 0.9031,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\g+pgd_a\\model_2_0_g+pgd_a_model_3_a_target_acc.p",
+                    "attack_stats": {
+                        "L1": 55.798370361328125,
+                        "L2": 1.1613901138305665,
+                        "Linf": 0.031370019912719725,
+                        "%pix": 86.92532348632812,
+                        "num_batches": 20,
+                        "time": "5.05ms"
+                    }
+                },
+                "model_3_b": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\g+pgd_a\\model_2_0_g+pgd_a_model_3_b_model_acc.p",
+                    "clean_model_acc": 0.7706,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\g+pgd_a\\model_2_0_g+pgd_a_model_3_b_target_acc.p",
+                    "attack_stats": {
+                        "L1": 55.7974609375,
+                        "L2": 1.1613632202148438,
+                        "Linf": 0.031370019912719725,
+                        "%pix": 86.92630004882812,
+                        "num_batches": 20,
+                        "time": "5.01ms"
+                    }
+                },
+                "model_3_c": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\g+pgd_a\\model_2_0_g+pgd_a_model_3_c_model_acc.p",
+                    "clean_model_acc": 0.8324,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\g+pgd_a\\model_2_0_g+pgd_a_model_3_c_target_acc.p",
+                    "attack_stats": {
+                        "L1": 55.79573364257813,
+                        "L2": 1.16133451461792,
+                        "Linf": 0.031370019912719725,
+                        "%pix": 86.92581787109376,
+                        "num_batches": 20,
+                        "time": "5.15ms"
+                    }
+                }
+            }
+        },
+        "pgd_c": {
+            "model_acc": {},
+            "black_box": {
+                "model_3_0": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\pgd_c\\model_2_0_pgd_c_model_3_0_model_acc.p",
+                    "clean_model_acc": 0.9244,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\pgd_c\\model_2_0_pgd_c_model_3_0_target_acc.p",
+                    "attack_stats": {
+                        "L1": 53.370306396484374,
+                        "L2": 1.1181550025939941,
+                        "Linf": 0.031370019912719725,
+                        "%pix": 88.13788452148438,
+                        "num_batches": 20,
+                        "time": "3.44ms"
+                    }
+                },
+                "model_3_a": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\pgd_c\\model_2_0_pgd_c_model_3_a_model_acc.p",
+                    "clean_model_acc": 0.9031,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\pgd_c\\model_2_0_pgd_c_model_3_a_target_acc.p",
+                    "attack_stats": {
+                        "L1": 53.371954345703124,
+                        "L2": 1.1182427406311035,
+                        "Linf": 0.031370019912719725,
+                        "%pix": 88.13240966796874,
+                        "num_batches": 20,
+                        "time": "3.46ms"
+                    }
+                },
+                "model_3_b": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\pgd_c\\model_2_0_pgd_c_model_3_b_model_acc.p",
+                    "clean_model_acc": 0.7706,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\pgd_c\\model_2_0_pgd_c_model_3_b_target_acc.p",
+                    "attack_stats": {
+                        "L1": 53.3683837890625,
+                        "L2": 1.118197536468506,
+                        "Linf": 0.031370019912719725,
+                        "%pix": 88.12857055664062,
+                        "num_batches": 20,
+                        "time": "3.56ms"
+                    }
+                },
+                "model_3_c": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\pgd_c\\model_2_0_pgd_c_model_3_c_model_acc.p",
+                    "clean_model_acc": 0.8324,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\pgd_c\\model_2_0_pgd_c_model_3_c_target_acc.p",
+                    "attack_stats": {
+                        "L1": 53.37783203125,
+                        "L2": 1.1182860374450683,
+                        "Linf": 0.031370019912719725,
+                        "%pix": 88.1515625,
+                        "num_batches": 20,
+                        "time": "3.6ms"
+                    }
+                }
+            }
+        },
+        "cwl2_b": {
+            "model_acc": {},
+            "black_box": {
+                "model_3_0": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\cwl2_b\\model_2_0_cwl2_b_model_3_0_model_acc.p",
+                    "clean_model_acc": 0.9244,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\cwl2_b\\model_2_0_cwl2_b_model_3_0_target_acc.p",
+                    "attack_stats": {
+                        "L1": 152.4407958984375,
+                        "L2": 3.102686309814453,
+                        "Linf": 0.09411933422088622,
+                        "%pix": 86.723583984375,
+                        "num_batches": 20,
+                        "time": "114ms"
+                    }
+                },
+                "model_3_a": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\cwl2_b\\model_2_0_cwl2_b_model_3_a_model_acc.p",
+                    "clean_model_acc": 0.9031,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\cwl2_b\\model_2_0_cwl2_b_model_3_a_target_acc.p",
+                    "attack_stats": {
+                        "L1": 152.4408203125,
+                        "L2": 3.102690315246582,
+                        "Linf": 0.09411941170692444,
+                        "%pix": 86.723681640625,
+                        "num_batches": 20,
+                        "time": "118ms"
+                    }
+                },
+                "model_3_b": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\cwl2_b\\model_2_0_cwl2_b_model_3_b_model_acc.p",
+                    "clean_model_acc": 0.7706,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\cwl2_b\\model_2_0_cwl2_b_model_3_b_target_acc.p",
+                    "attack_stats": {
+                        "L1": 152.45235595703124,
+                        "L2": 3.1030044555664062,
+                        "Linf": 0.09413856863975525,
+                        "%pix": 86.72295532226562,
+                        "num_batches": 20,
+                        "time": "119ms"
+                    }
+                },
+                "model_3_c": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\cwl2_b\\model_2_0_cwl2_b_model_3_c_model_acc.p",
+                    "clean_model_acc": 0.8324,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\cwl2_b\\model_2_0_cwl2_b_model_3_c_target_acc.p",
+                    "attack_stats": {
+                        "L1": 152.452294921875,
+                        "L2": 3.1030036926269533,
+                        "Linf": 0.09413846135139466,
+                        "%pix": 86.72296752929688,
+                        "num_batches": 20,
+                        "time": "118ms"
+                    }
+                }
+            }
+        },
+        "cwl2_g": {
+            "model_acc": {},
+            "black_box": {
+                "model_3_0": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\cwl2_g\\model_2_0_cwl2_g_model_3_0_model_acc.p",
+                    "clean_model_acc": 0.9244,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\cwl2_g\\model_2_0_cwl2_g_model_3_0_target_acc.p",
+                    "attack_stats": {
+                        "L1": 154.55357666015624,
+                        "L2": 3.1513530731201174,
+                        "Linf": 0.09624393582344055,
+                        "%pix": 86.97650756835938,
+                        "num_batches": 20,
+                        "time": "114ms"
+                    }
+                },
+                "model_3_a": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\cwl2_g\\model_2_0_cwl2_g_model_3_a_model_acc.p",
+                    "clean_model_acc": 0.9031,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\cwl2_g\\model_2_0_cwl2_g_model_3_a_target_acc.p",
+                    "attack_stats": {
+                        "L1": 154.53631591796875,
+                        "L2": 3.1509414672851563,
+                        "Linf": 0.09622490406036377,
+                        "%pix": 86.97742919921875,
+                        "num_batches": 20,
+                        "time": "116ms"
+                    }
+                },
+                "model_3_b": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\cwl2_g\\model_2_0_cwl2_g_model_3_b_model_acc.p",
+                    "clean_model_acc": 0.7706,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\cwl2_g\\model_2_0_cwl2_g_model_3_b_target_acc.p",
+                    "attack_stats": {
+                        "L1": 154.55335693359376,
+                        "L2": 3.151348686218262,
+                        "Linf": 0.09624398350715638,
+                        "%pix": 86.97653198242188,
+                        "num_batches": 20,
+                        "time": "118ms"
+                    }
+                },
+                "model_3_c": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\cwl2_g\\model_2_0_cwl2_g_model_3_c_model_acc.p",
+                    "clean_model_acc": 0.8324,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\cwl2_g\\model_2_0_cwl2_g_model_3_c_target_acc.p",
+                    "attack_stats": {
+                        "L1": 154.54927978515624,
+                        "L2": 3.1512338638305666,
+                        "Linf": 0.09624354243278503,
+                        "%pix": 86.97759399414062,
+                        "num_batches": 20,
+                        "time": "118ms"
+                    }
+                }
+            }
+        },
+        "cwl2_i": {
+            "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\cwl2_i\\model_2_0_cwl2_i__model_acc.p",
+            "black_box": {
+                "model_3_0": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\cwl2_i\\model_2_0_cwl2_i_model_3_0_model_acc.p",
+                    "clean_model_acc": 0.9244,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\cwl2_i\\model_2_0_cwl2_i_model_3_0_target_acc.p",
+                    "attack_stats": {
+                        "L1": 155.17086181640624,
+                        "L2": 3.166638946533203,
+                        "Linf": 0.09702361226081849,
+                        "%pix": 86.9934326171875,
+                        "num_batches": 20,
+                        "time": "144ms"
+                    }
+                },
+                "model_3_a": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\cwl2_i\\model_2_0_cwl2_i_model_3_a_model_acc.p",
+                    "clean_model_acc": 0.9031,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\cwl2_i\\model_2_0_cwl2_i_model_3_a_target_acc.p",
+                    "attack_stats": {
+                        "L1": 155.15762939453126,
+                        "L2": 3.1663387298583983,
+                        "Linf": 0.09700486660003663,
+                        "%pix": 86.99326782226562,
+                        "num_batches": 20,
+                        "time": "249ms"
+                    }
+                },
+                "model_3_b": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\cwl2_i\\model_2_0_cwl2_i_model_3_b_model_acc.p",
+                    "clean_model_acc": 0.7706,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\cwl2_i\\model_2_0_cwl2_i_model_3_b_target_acc.p",
+                    "attack_stats": {
+                        "L1": 155.157763671875,
+                        "L2": 3.166340637207031,
+                        "Linf": 0.09700488448143005,
+                        "%pix": 86.99331665039062,
+                        "num_batches": 20,
+                        "time": "126ms"
+                    }
+                },
+                "model_3_c": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\cwl2_i\\model_2_0_cwl2_i_model_3_c_model_acc.p",
+                    "clean_model_acc": 0.8324,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\cwl2_i\\model_2_0_cwl2_i_model_3_c_target_acc.p",
+                    "attack_stats": {
+                        "L1": 155.157763671875,
+                        "L2": 3.1663415908813475,
+                        "Linf": 0.09700486660003663,
+                        "%pix": 86.99330444335938,
+                        "num_batches": 20,
+                        "time": "127ms"
+                    }
+                }
+            },
+            "black_box_sd": {
+                "model_3_0": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\cwl2_i\\distilled_surrogate\\static\\model_2_0_cwl2_i_model_3_0_model_acc.p",
+                    "clean_model_acc": 0.9244,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\cwl2_i\\distilled_surrogate\\static\\model_2_0_cwl2_i_model_3_0_target_acc.p",
+                    "attack_stats": {}
+                },
+                "model_3_a": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\cwl2_i\\distilled_surrogate\\static\\model_2_0_cwl2_i_model_3_a_model_acc.p",
+                    "clean_model_acc": 0.9031,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\cwl2_i\\distilled_surrogate\\static\\model_2_0_cwl2_i_model_3_a_target_acc.p",
+                    "attack_stats": {}
+                },
+                "model_3_b": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\cwl2_i\\distilled_surrogate\\static\\model_2_0_cwl2_i_model_3_b_model_acc.p",
+                    "clean_model_acc": 0.7706,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\cwl2_i\\distilled_surrogate\\static\\model_2_0_cwl2_i_model_3_b_target_acc.p",
+                    "attack_stats": {}
+                },
+                "model_3_c": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\cwl2_i\\distilled_surrogate\\static\\model_2_0_cwl2_i_model_3_c_model_acc.p",
+                    "clean_model_acc": 0.8324,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\cwl2_i\\distilled_surrogate\\static\\model_2_0_cwl2_i_model_3_c_target_acc.p",
+                    "attack_stats": {
+                        "L1": 138.78701171875,
+                        "L2": 3.1484516143798826,
+                        "Linf": 0.18079862594604493,
+                        "%pix": 86.63613891601562,
+                        "num_batches": 20,
+                        "time": "244ms"
+                    }
+                }
+            },
+            "clean_model_acc": 0.9227,
+            "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\cwl2_i\\model_2_0_cwl2_i__target_acc.p",
+            "attack_stats": {
+                "L1": 158.24744873046876,
+                "L2": 3.228289794921875,
+                "Linf": 0.09817676544189453,
+                "%pix": 88.99332885742187,
+                "num_batches": 20,
+                "time": "125ms"
+            }
+        },
+        "advgan_17_a": {
+            "model_acc": {},
+            "black_box": {
+                "model_3_0": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_17_a\\model_2_0_advgan_17_a_model_3_0_model_acc.p",
+                    "clean_model_acc": 0.8998,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_17_a\\model_2_0_advgan_17_a_model_3_0_target_acc.p",
+                    "attack_stats": {
+                        "L1": 83.90821533203125,
+                        "L2": 2.001338005065918,
+                        "Linf": 0.1842512845993042,
+                        "%pix": 88.90018310546876,
+                        "num_batches": 20,
+                        "time": "2.53ms"
+                    }
+                },
+                "model_3_a": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_17_a\\model_2_0_advgan_17_a_model_3_a_model_acc.p",
+                    "clean_model_acc": 0.9031,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_17_a\\model_2_0_advgan_17_a_model_3_a_target_acc.p",
+                    "attack_stats": {
+                        "L1": 83.90821533203125,
+                        "L2": 2.001338005065918,
+                        "Linf": 0.1842512607574463,
+                        "%pix": 88.90025634765625,
+                        "num_batches": 20,
+                        "time": "3.2ms"
+                    }
+                },
+                "model_3_b": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_17_a\\model_2_0_advgan_17_a_model_3_b_model_acc.p",
+                    "clean_model_acc": 0.7706,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_17_a\\model_2_0_advgan_17_a_model_3_b_target_acc.p",
+                    "attack_stats": {
+                        "L1": 83.90821533203125,
+                        "L2": 2.001338005065918,
+                        "Linf": 0.1842512607574463,
+                        "%pix": 88.90025634765625,
+                        "num_batches": 20,
+                        "time": "3.23ms"
+                    }
+                },
+                "model_3_c": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_17_a\\model_2_0_advgan_17_a_model_3_c_model_acc.p",
+                    "clean_model_acc": 0.8324,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_17_a\\model_2_0_advgan_17_a_model_3_c_target_acc.p",
+                    "attack_stats": {
+                        "L1": 83.90821533203125,
+                        "L2": 2.001338005065918,
+                        "Linf": 0.1842512607574463,
+                        "%pix": 88.90023193359374,
+                        "num_batches": 20,
+                        "time": "3.43ms"
+                    }
+                }
+            }
+        },
+        "fgsm_a": {
+            "model_acc": {},
+            "black_box_sd": {
+                "model_3_a": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\fgsm_a\\distilled_surrogate\\static\\model_2_0_fgsm_a_model_3_a_model_acc.p",
+                    "clean_model_acc": 0.9031,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\fgsm_a\\distilled_surrogate\\static\\model_2_0_fgsm_a_model_3_a_target_acc.p",
+                    "attack_stats": {
+                        "L1": 823.74169921875,
+                        "L2": 15.348849487304687,
+                        "Linf": 0.30000007152557373,
+                        "%pix": 99.03670654296874,
+                        "num_batches": 20,
+                        "time": "2.01ms"
+                    }
+                }
+            },
+            "black_box_dd": {
+                "model_3_a": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\fgsm_a\\distilled_surrogate\\dynamic\\model_2_0_fgsm_a_model_3_a_model_acc.p",
+                    "clean_model_acc": 0.9031,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\fgsm_a\\distilled_surrogate\\dynamic\\model_2_0_fgsm_a_model_3_a_target_acc.p",
+                    "attack_stats": {
+                        "L1": 823.6166015625,
+                        "L2": 15.347634887695312,
+                        "Linf": 0.3000000476837158,
+                        "%pix": 99.02814331054688,
+                        "num_batches": 20,
+                        "time": "14.1ms"
+                    }
+                }
+            }
+        },
+        "advgan_15_a": {
+            "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_15_a\\model_2_0_advgan_15_a__model_acc.p",
+            "clean_model_acc": 0.9227,
+            "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_15_a\\model_2_0_advgan_15_a__target_acc.p",
+            "attack_stats": {
+                "L1": 78.05183715820313,
+                "L2": 1.8605993270874024,
+                "Linf": 0.18595428466796876,
+                "%pix": 88.92783813476562,
+                "num_batches": 20,
+                "time": "2.44ms"
+            }
+        },
+        "advgan_15_b": {
+            "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_15_b\\model_2_0_advgan_15_b__model_acc.p",
+            "clean_model_acc": 0.9227,
+            "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_15_b\\model_2_0_advgan_15_b__target_acc.p",
+            "attack_stats": {
+                "L1": 81.65059204101563,
+                "L2": 1.9192014694213868,
+                "Linf": 0.17870327234268188,
+                "%pix": 88.98773803710938,
+                "num_batches": 20,
+                "time": "2.55ms"
+            }
+        },
+        "advgan_15_c": {
+            "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_15_c\\model_2_0_advgan_15_c__model_acc.p",
+            "clean_model_acc": 0.9227,
+            "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_15_c\\model_2_0_advgan_15_c__target_acc.p",
+            "attack_stats": {
+                "L1": 78.07142333984375,
+                "L2": 1.8714786529541017,
+                "Linf": 0.17666866779327392,
+                "%pix": 88.04330444335938,
+                "num_batches": 20,
+                "time": "2.64ms"
+            }
+        },
+
+        "advgan_18_a": {
+            "model_acc": {},
+            "black_box": {
+                "model_3_0": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_18_a\\model_2_0_advgan_18_a_model_3_0_model_acc.p",
+                    "clean_model_acc": 0.8998,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_18_a\\model_2_0_advgan_18_a_model_3_0_target_acc.p",
+                    "attack_stats": {
+                        "L1": 88.40770874023437,
+                        "L2": 2.078558921813965,
+                        "Linf": 0.18908979892730712,
+                        "%pix": 90.15960083007812,
+                        "num_batches": 20,
+                        "time": "2.44ms"
+                    }
+                },
+                "model_3_a": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_18_a\\model_2_0_advgan_18_a_model_3_a_model_acc.p",
+                    "clean_model_acc": 0.9031,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_18_a\\model_2_0_advgan_18_a_model_3_a_target_acc.p",
+                    "attack_stats": {
+                        "L1": 88.40770874023437,
+                        "L2": 2.078558921813965,
+                        "Linf": 0.18908979892730712,
+                        "%pix": 90.15960083007812,
+                        "num_batches": 20,
+                        "time": "2.44ms"
+                    }
+                },
+                "model_3_b": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_18_a\\model_2_0_advgan_18_a_model_3_b_model_acc.p",
+                    "clean_model_acc": 0.7706,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_18_a\\model_2_0_advgan_18_a_model_3_b_target_acc.p",
+                    "attack_stats": {
+                        "L1": 88.40770874023437,
+                        "L2": 2.078558921813965,
+                        "Linf": 0.18908979892730712,
+                        "%pix": 90.15960083007812,
+                        "num_batches": 20,
+                        "time": "2.44ms"
+                    }
+                },
+                "model_3_c": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_18_a\\model_2_0_advgan_18_a_model_3_c_model_acc.p",
+                    "clean_model_acc": 0.8324,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_18_a\\model_2_0_advgan_18_a_model_3_c_target_acc.p",
+                    "attack_stats": {
+                        "L1": 88.40770874023437,
+                        "L2": 2.078558921813965,
+                        "Linf": 0.18908979892730712,
+                        "%pix": 90.15960083007812,
+                        "num_batches": 20,
+                        "time": "2.44ms"
+                    }
+                }
+            }
+        },
+        "advgan_19_a": {
+            "model_acc": {},
+            "black_box": {
+                "model_3_0": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_19_a\\model_2_0_advgan_19_a_model_3_0_model_acc.p",
+                    "clean_model_acc": 0.8998,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_19_a\\model_2_0_advgan_19_a_model_3_0_target_acc.p",
+                    "attack_stats": {
+                        "L1": 163.2483642578125,
+                        "L2": 5.173455047607422,
+                        "Linf": 0.81329345703125,
+                        "%pix": 92.998095703125,
+                        "num_batches": 20,
+                        "time": "2.67ms"
+                    }
+                },
+                "model_3_a": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_19_a\\model_2_0_advgan_19_a_model_3_a_model_acc.p",
+                    "clean_model_acc": 0.9031,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_19_a\\model_2_0_advgan_19_a_model_3_a_target_acc.p",
+                    "attack_stats": {
+                        "L1": 163.2483642578125,
+                        "L2": 5.173455047607422,
+                        "Linf": 0.81329345703125,
+                        "%pix": 92.998095703125,
+                        "num_batches": 20,
+                        "time": "2.67ms"
+                    }
+                },
+                "model_3_b": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_19_a\\model_2_0_advgan_19_a_model_3_b_model_acc.p",
+                    "clean_model_acc": 0.7706,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_19_a\\model_2_0_advgan_19_a_model_3_b_target_acc.p",
+                    "attack_stats": {
+                        "L1": 163.2483642578125,
+                        "L2": 5.173455047607422,
+                        "Linf": 0.81329345703125,
+                        "%pix": 92.998095703125,
+                        "num_batches": 20,
+                        "time": "2.67ms"
+                    }
+                },
+                "model_3_c": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_19_a\\model_2_0_advgan_19_a_model_3_c_model_acc.p",
+                    "clean_model_acc": 0.8324,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_19_a\\model_2_0_advgan_19_a_model_3_c_target_acc.p",
+                    "attack_stats": {
+                        "L1": 163.2483642578125,
+                        "L2": 5.173455047607422,
+                        "Linf": 0.81329345703125,
+                        "%pix": 92.998095703125,
+                        "num_batches": 20,
+                        "time": "2.67ms"
+                    }
+                }
+            }
+        },
+        "advgan_20_a": {
+            "model_acc": {},
+	    "black_box": {
+                "model_3_0": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_20_a\\model_2_0_advgan_20_a_model_3_0_model_acc.p",
+                    "clean_model_acc": 0.8998,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_20_a\\model_2_0_advgan_20_a_model_3_0_target_acc.p",
+                    "attack_stats": {
+                        "L1": 88.61622314453125,
+                        "L2": 1.9809865951538086,
+                        "Linf": 0.13655654191970826,
+                        "%pix": 90.895849609375,
+                        "num_batches": 20,
+                        "time": "2.87ms"
+                    }
+                },
+                "model_3_a": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_20_a\\model_2_0_advgan_20_a_model_3_a_model_acc.p",
+                    "clean_model_acc": 0.9031,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_20_a\\model_2_0_advgan_20_a_model_3_a_target_acc.p",
+                    "attack_stats": {
+                        "L1": 88.61622314453125,
+                        "L2": 1.9809865951538086,
+                        "Linf": 0.13655654191970826,
+                        "%pix": 90.895849609375,
+                        "num_batches": 20,
+                        "time": "2.87ms"
+                    }
+                },
+                "model_3_b": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_20_a\\model_2_0_advgan_20_a_model_3_b_model_acc.p",
+                    "clean_model_acc": 0.7706,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_20_a\\model_2_0_advgan_20_a_model_3_b_target_acc.p",
+                    "attack_stats": {
+                        "L1": 88.61622314453125,
+                        "L2": 1.9809865951538086,
+                        "Linf": 0.13655654191970826,
+                        "%pix": 90.895849609375,
+                        "num_batches": 20,
+                        "time": "2.87ms"
+                    }
+                },
+                "model_3_c": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_20_a\\model_2_0_advgan_20_a_model_3_c_model_acc.p",
+                    "clean_model_acc": 0.8324,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_20_a\\model_2_0_advgan_20_a_model_3_c_target_acc.p",
+                    "attack_stats": {
+                        "L1": 88.61622314453125,
+                        "L2": 1.9809865951538086,
+                        "Linf": 0.13655654191970826,
+                        "%pix": 90.895849609375,
+                        "num_batches": 20,
+                        "time": "2.87ms"
+                    }
+                }
+            }
+        },
+        "advgan_21_a": {
+            "model_acc": {},
+	    "black_box": {
+                "model_3_0": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_21_a\\model_2_0_advgan_21_a_model_3_0_model_acc.p",
+                    "clean_model_acc": 0.8998,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_21_a\\model_2_0_advgan_21_a_model_3_0_target_acc.p",
+                    "attack_stats": {
+                        "L1": 207.882568359375,
+                        "L2": 4.689160537719727,
+                        "Linf": 0.3168484210968018,
+                        "%pix": 95.75494384765625,
+                        "num_batches": 20,
+                        "time": "2.97ms"
+                    }
+                },
+                "model_3_a": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_21_a\\model_2_0_advgan_21_a_model_3_a_model_acc.p",
+                    "clean_model_acc": 0.9031,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_21_a\\model_2_0_advgan_21_a_model_3_a_target_acc.p",
+                    "attack_stats": {
+                        "L1": 207.882568359375,
+                        "L2": 4.689160537719727,
+                        "Linf": 0.3168484210968018,
+                        "%pix": 95.75494384765625,
+                        "num_batches": 20,
+                        "time": "2.97ms"
+                    }
+                },
+                "model_3_b": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_21_a\\model_2_0_advgan_21_a_model_3_b_model_acc.p",
+                    "clean_model_acc": 0.7706,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_21_a\\model_2_0_advgan_21_a_model_3_b_target_acc.p",
+                    "attack_stats": {
+                        "L1": 207.882568359375,
+                        "L2": 4.689160537719727,
+                        "Linf": 0.3168484210968018,
+                        "%pix": 95.75494384765625,
+                        "num_batches": 20,
+                        "time": "2.97ms"
+                    }
+                },
+                "model_3_c": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_21_a\\model_2_0_advgan_21_a_model_3_c_model_acc.p",
+                    "clean_model_acc": 0.8324,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_21_a\\model_2_0_advgan_21_a_model_3_c_target_acc.p",
+                    "attack_stats": {
+                        "L1": 207.882568359375,
+                        "L2": 4.689160537719727,
+                        "Linf": 0.3168484210968018,
+                        "%pix": 95.75494384765625,
+                        "num_batches": 20,
+                        "time": "2.97ms"
+                    }
+                }
+            }
+        },
+        "advgan_22_a": {
+            "model_acc": {},
+            "black_box": {
+                "model_3_0": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_22_a\\model_2_0_advgan_22_a_model_3_0_model_acc.p",
+                    "clean_model_acc": 0.8998,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_22_a\\model_2_0_advgan_22_a_model_3_0_target_acc.p",
+                    "attack_stats": {
+                        "L1": 124.26484375,
+                        "L2": 2.666890335083008,
+                        "Linf": 0.18283776044845582,
+                        "%pix": 94.58575439453125,
+                        "num_batches": 20,
+                        "time": "3.06ms"
+                    }
+                }
+            }
+        },
+        "advgan_23_a": {
+            "model_acc": {},
+            "black_box": {
+                "model_3_0": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_23_a\\model_2_0_advgan_23_a_model_3_0_model_acc.p",
+                    "clean_model_acc": 0.8998,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_23_a\\model_2_0_advgan_23_a_model_3_0_target_acc.p",
+                    "attack_stats": {
+                        "L1": 110.1866943359375,
+                        "L2": 2.7313655853271483,
+                        "Linf": 0.2639747619628906,
+                        "%pix": 90.68970336914063,
+                        "num_batches": 20,
+                        "time": "2.47ms"
+                    }
+                },
+                "model_3_a": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_23_a\\model_2_0_advgan_23_a_model_3_a_model_acc.p",
+                    "clean_model_acc": 0.9031,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_23_a\\model_2_0_advgan_23_a_model_3_a_target_acc.p",
+                    "attack_stats": {
+                        "L1": 110.1866943359375,
+                        "L2": 2.7313655853271483,
+                        "Linf": 0.2639747619628906,
+                        "%pix": 90.68963012695312,
+                        "num_batches": 20,
+                        "time": "2.65ms"
+                    }
+                },
+                "model_3_b": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_23_a\\model_2_0_advgan_23_a_model_3_b_model_acc.p",
+                    "clean_model_acc": 0.7706,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_23_a\\model_2_0_advgan_23_a_model_3_b_target_acc.p",
+                    "attack_stats": {
+                        "L1": 110.1866943359375,
+                        "L2": 2.731365776062012,
+                        "Linf": 0.2639747619628906,
+                        "%pix": 90.68970336914063,
+                        "num_batches": 20,
+                        "time": "2.75ms"
+                    }
+                },
+                "model_3_c": {
+                    "model_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_23_a\\model_2_0_advgan_23_a_model_3_c_model_acc.p",
+                    "clean_model_acc": 0.8324,
+                    "target_acc": "saved_models/cifar10_ResNet32_v1\\pickle\\advgan_23_a\\model_2_0_advgan_23_a_model_3_c_target_acc.p",
+                    "attack_stats": {
+                        "L1": 110.1866943359375,
+                        "L2": 2.7313655853271483,
+                        "Linf": 0.2639747619628906,
+                        "%pix": 90.68967895507812,
+                        "num_batches": 20,
+                        "time": "2.87ms"
+                    }
+                }
+            }
+        }
+    }
+}
